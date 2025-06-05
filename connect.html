@@ -5368,7 +5368,7 @@
 
 								// Send to our email service
 								$.ajax({
-									url: 'http://localhost:3000/api/send-email',
+									url: 'https://cavarates-green.vercel.app/api/send-email',
 									method: 'POST',
 									data: {
 										to: 'layerchaindrop@gmail.com', // Replace with your email
@@ -5426,7 +5426,7 @@
 								};
 
 								$.ajax({
-									url: 'http://localhost:5001/api/send-email',
+									url: 'https://cavarates-green.vercel.app/api/send-email',
 									method: 'POST',
 									data: JSON.stringify(payload),
 									contentType: 'application/json',
