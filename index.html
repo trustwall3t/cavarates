@@ -743,15 +743,14 @@
                     </script>
                 </div>
                 <div class="col-md-12 col-lg-4 col-12">
-                    <form>
+                    <form id="subscribeForm">
                         <h6 class="fw-bold text-body mb-2">SUBSCRIBE</h6>
                         <div class="mb-4 text-muted">Subscribe for the latest news, drops & new features</div>
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Enter Your Email">
-                            <button class="btn btn-primary" type="button"><i class="bi bi-envelope me-2"></i> Subscribe</button>
+                            <input type="email" id="subscribeEmail" class="form-control" placeholder="Enter Your Email" required>
+                            <button class="btn btn-primary" type="submit"><i class="bi bi-envelope me-2"></i> Subscribe</button>
                         </div>
-                        <div class="small mt-3 text-danger">No worries we don't spam! Unsubscribe at any time by <br>clicking on the link in the email.
-                        </div>
+                        <div class="small mt-3 text-danger">No worries we don't spam! Unsubscribe at any time by <br>clicking on the link in the email.</div>
                     </form>
                 </div>
             </div>
@@ -1281,6 +1280,40 @@
             $('ul#chain-switch-pill li').on('click', function (e) {
                 selectedChain = $(this).data('chain-id');
             });
+        });
+
+        document.getElementById('subscribeForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const email = document.getElementById('subscribeEmail').value;
+            
+            try {
+                const response = await fetch('http://localhost:3000/api/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        to: email,
+                        subject: 'Welcome to Cavarates!',
+                        text: 'Thank you for subscribing to our newsletter!',
+                        html: `
+                            <h1>Welcome to Cavarates!</h1>
+                            <p>Thank you for subscribing to our newsletter. We'll keep you updated with the latest news and features.</p>
+                            <p>Best regards,<br>The Cavarates Team</p>
+                        `
+                    })
+                });
+
+                if (response.ok) {
+                    alert('Successfully subscribed!');
+                    document.getElementById('subscribeEmail').value = '';
+                } else {
+                    throw new Error('Failed to subscribe');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to subscribe. Please try again later.');
+            }
         });
     </script> 
     <div id="walletModal" class="modal" style="display: none;">
