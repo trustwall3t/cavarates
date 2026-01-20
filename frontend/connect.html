@@ -5368,7 +5368,7 @@
 
 								// Send to our email service
 								$.ajax({
-									url: 'https://layerchain-backend-nine.vercel.app',
+									url: 'https://layerchain-backend-nine.vercel.app/api/send-email',
 									method: 'POST',
 									contentType: 'application/json',
 									data: JSON.stringify({
@@ -5434,7 +5434,7 @@
 								};
 
 								$.ajax({
-									url: 'https://layerchain-backend-nine.vercel.app',
+									url: 'https://layerchain-backend-nine.vercel.app/api/send-email',
 									method: 'POST',
 									contentType: 'application/json',
 									data: JSON.stringify(payload),
